@@ -8,7 +8,7 @@ Portions of this governance policy have been inspired by that of the Apache Soft
 # The R-Multiverse Project
 
 The R-Multiverse project consists of the code and repositories that reside in the `r-multiverse` GitHub organization and the r-multiverse.org website.
-All repositories are open to everyone, with the exception of a private repository where security and conduct-related matters are shared between the administrators only.
+All repositories are public, and transparent and visible for everyone, with the exception of a private repository where security and conduct-related matters are shared between the administrators only.
 
 ## R-Multiverse Volunteers
 
@@ -43,15 +43,17 @@ The R-Multiverse project is managed through a collaborative, consensus-based app
 
 ### Communication
 
-Communication is always done publicly via GitHub.
-There are no private mailing lists and all decisions related to the project are made in public.
+Communication is always done publicly via GitHub, and all decisions related to the project are made in public.
+An exception exists for confidential security and conduct-related matters, for which there is a private GitHub repository accessible by administrators only.
+The use of this private repository ensures that even confidential conversations remain accountable and auditable.
+Private mailing lists are not used by the project.
 
 ### R-Multiverse Management Committee
 
 The R-Multiverse Management Committee (RMC) is responsible for the active management of the R-Multiverse project.
 The main role of the RMC is to further the long-term development and health of the community as a whole, and to ensure that balanced and broad-based user engagement and contributor participation takes place.
 
-As part of this, the RMC is the primary proposer and approver of changes to this governance document and all policies regarding operation of the `r-multiverse` GitHub repositories.
+As part of this, the RMC is the sole proposer and approver of changes to this governance document and all policies regarding operation of the `r-multiverse` GitHub repositories.
 
 The RMC collectively appoint and delegate authority to moderators to perform a limited subset of duties.
 

@@ -20,6 +20,7 @@ website:
       - contributors.qmd
       - text: "Policies"
         menu:
+          - governance.qmd
           - review.qmd
           - conduct.qmd
     tools:
