@@ -63,7 +63,7 @@ All changes to this governance document, or to a policy document such as the Cod
 All members of the community are invited to participate, and Proposals may be withdrawn or revised by their initial proposer as a result.
 Revisions likely to be regarded as material shall be proposed as a new Proposal, with reference to the preceding discussion.
 
-Proposals will be deemed to have been adopted if both one calendar month has passed after notice has been publicly posted and either (i) there has been no further response from an administrator or (ii) dissent by an administrator was recorded and the Proposal has been passed after voting has taken place as per the Voting Process described below.
+Proposals will be deemed to have been adopted if both one calendar month has passed after notice has been publicly posted and either (i) there has been no dissent from from an administrator or (ii) dissent by an administrator was recorded and the Proposal has been passed after voting has taken place as per the Voting Process described below.
 
 Proposals to add or remove members of the RMC shall be put forward publicly by any member of the RMC, and shall be treated in the same way as any other Proposal.
 
