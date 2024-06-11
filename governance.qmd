@@ -16,25 +16,26 @@ We recognize four groups of individuals related to the project.
 
 ### User
 
-A user is someone who uses R-Multiverse by downloading and installing packages from the R-Multiverse repositories.
+A User is someone who uses R-Multiverse by downloading and installing packages from the R-Multiverse repositories.
 
 ### Contributor
 
-A contributor is someone who seeks to make a modification to the R-Multiverse repositories and/or the GitHub organization.
-This would most commonly be by contributing a package at `r-multiverse/contributions`, where the contributor is often the maintainer of the contributed package.
+A Contributor is someone who seeks to make a modification to the R-Multiverse repositories and/or the GitHub organization.
+This would most commonly be by contributing a package at `r-multiverse/contributions`, where the Contributor is often the maintainer of the contributed package.
 Contributions may also take the form of feedback in the form of bug reports and feature suggestions in the `r-multiverse/help` repository, or more generally by answering questions from the community in this repository.
 
 ### Moderator
 
-A moderator is someone who has been invited by the R-Multiverse Management Committee (RMC) to take on a moderator role.
+A Moderator is someone who has been invited by the R-Multiverse Management Committee (RMC) to take on a moderator role.
 This entails certains rights and associated responsibilities which are outlined in full in the Review Policy, which may evolve over time.
-A moderator may vet contributions and decide to admit or remove contributed packages from the repositories in accordance with the Review Policy.
+A Moderator may vet contributions and decide to admit or remove contributed packages from the repositories in accordance with the Review Policy.
+A Moderator may also moderate issues and discussions raised by Contributors in the `r-multiverse/help` repository or other forums on R-Multiverse.
 
 ### Administrator
 
-An administrator is a member of the R-Multiverse Management Committee (RMC).
+An Administrator is a member of the R-Multiverse Management Committee (RMC).
 Administrators have write access to all code repositories under the `r-multiverse` GitHub organization and maintain the infrastructure for the project.
-They have the right to cast votes on all proposals on community-related decisions, the right to appoint moderators, and the right to change the composition of the RMC itself.
+They have the right to create Proposals, cast votes on all Proposals on community-related decisions, the right to appoint Moderators, and the right to change the composition of the RMC itself.
 The RMC as a whole is the entity that controls the project, and is responsible for the continued shaping of this governance document and other policies, including the Review Policy and Code of Conduct.
 
 ## R-Multiverse Management and Collaboration
@@ -98,7 +99,7 @@ The RMC actively track the corporate affiliations of administrators and moderato
 
 The RMC is responsible for protecting the R-Multiverse name, brand and reputation, and for enforcing adherence to this document.
 
-Where this is jeopardised through the actions of an administrator, moderator or contributor, the RMC will have the authority to immediately remove that person from their capacity in that role, not requiring the usual one month notice period for enacting Proposals.
+Where this is jeopardised through the actions of an Administrator, Moderator or Contributor, the RMC will have the authority to immediately remove that person from their capacity in that role, not requiring the usual one month notice period for enacting Proposals.
 
 ## Pre-Launch Period
 
