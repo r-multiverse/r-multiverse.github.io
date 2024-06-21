@@ -10,7 +10,7 @@ Its purpose is to formalize decision-making for the project and facilitate manag
 # The R-Multiverse Project
 
 The R-Multiverse project consists of the code and repositories that reside in the `r-multiverse` GitHub organization and the r-multiverse.org website.
-All repositories are public, and transparent and visible for everyone, with the exception of a private repository where security and conduct-related matters are shared between the administrators only.
+All repositories are public, transparent and visible for everyone, with the exception of a private repository where security and conduct-related matters are shared among administrators only.
 
 ## R-Multiverse Mission
 
