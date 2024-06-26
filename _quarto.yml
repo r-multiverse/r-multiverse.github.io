@@ -23,6 +23,7 @@ website:
         menu:
           - review.qmd
           - conduct.qmd
+          - governance.qmd
           - security.qmd
     tools:
       - icon: github

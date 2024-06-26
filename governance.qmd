@@ -1,0 +1,5 @@
+---
+title: "Governance Document"
+---
+
+{{< include governance.md >}}
