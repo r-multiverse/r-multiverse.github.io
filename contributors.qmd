@@ -47,12 +47,12 @@ In rare cases, the package may be in a subdirectory of a GitHub repo. In these c
 
 ## How to create a badge
 
-[<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fr-multiverse.r-universe.dev%2Fapi%2Fpackages%2Fmirai&query=%24.Version&label=R-multiverse" alt="R-multiverse status" />](https://r-multiverse.r-universe.dev/mirai)
+[<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2Fmirai&query=%24.Version&label=r-multiverse" alt="R-multiverse status" />](https://community.r-multiverse.org/mirai)
 
 To add a dynamic 'R-multiverse' badge for package readme files, like the one above, copy the following markdown snippet, replacing 'pkgNAME' with the actual package name in both places it appears:
 
 ```{.md}
-[![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fr-multiverse.r-universe.dev%2Fapi%2Fpackages%2FpkgNAMEquery=%24.Version&label=R-multiverse)](https://r-multiverse.r-universe.dev/pkgNAME)
+[![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2FpkgNAME&query=%24.Version&label=r-multiverse)](https://community.r-multiverse.org/pkgNAME)
 ```
 
 ## How to edit or remove packages
@@ -65,7 +65,7 @@ An automated process periodically scans each new pull request to <https://github
 
 ## How the R-multiverse universe is built
 
-Periodically, a GitHub Actions workflow collects all the packages and URLs from the [`packages`](https://github.com/r-multiverse/contributions/tree/main/packages) folder and builds the `packages.json` file for the universe at <https://github.com/r-multiverse/r-multiverse.r-universe.dev>. <https://r-multiverse.r-universe.dev> periodically refreshes to include the latest release of each package in `packages.json`.
+Periodically, a GitHub Actions workflow collects all the packages and URLs from the [`packages`](https://github.com/r-multiverse/contributions/tree/main/packages) folder and builds the `packages.json` file for the universe at <https://github.com/r-multiverse/community>. <https://community.r-multiverse.org> periodically refreshes to include the latest release of each package in `packages.json`.
 
 ## Ownership and attribution
 

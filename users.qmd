@@ -9,7 +9,7 @@ R has built-in support for multiple repositories.
 Simply add R-multiverse to your repository settings. For example:
 
 ```r
-options(repos = c("https://r-multiverse.org", getOption("repos")))
+options(repos = c("https://community.r-multiverse.org", getOption("repos")))
 ```
 
 Setting the `repos` option is only required once per session. We recommend adding this line to your `.Rprofile` so that it is set automatically.

@@ -9,7 +9,7 @@ As the [contributors](contributors.qmd) page explains, updates to the R-multiver
 
 ## The automated review process
 
-The [`review_pull_requests.yaml`](https://github.com/r-multiverse/r-multiverse.r-universe.dev/blob/main/.github/workflows/review_pull_requests.yaml) [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) workflow runs periodically and reviews each new open pull request using [`multiverse.internals::review_pull_request()`](https://github.com/r-multiverse/multiverse.internals/blob/main/R/review_pull_request.R). Depending on the results of the automated checks, the bot will automatically merge the pull request, close it, or flag it for manual review. The bot will post an informative comment explaining the decision, and it may add a GitHub label to the pull request for triage purposes.
+The [`review.yaml`](https://github.com/r-multiverse/community/blob/main/.github/workflows/review.yaml) [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) workflow runs periodically and reviews each new open pull request using [`multiverse.internals::review_pull_requests()`](https://github.com/r-multiverse/multiverse.internals/blob/main/R/review_pull_requests.R). Depending on the results of the automated checks, the bot will automatically merge the pull request, close it, or flag it for manual review. The bot will post an informative comment explaining the decision, and it may add a GitHub label to the pull request for triage purposes.
 
 The pull request is automatically closed if:
 

@@ -2,18 +2,18 @@
 title: "What is R-multiverse?"
 ---
 
-## The Quality Assurance (QA) for R packages
+## The Community Repository for R packages
 
 A traditional software version cycle begins with the development phase, where bugs are expected and ironed out, and ends with the production phase, which promises a seamless user experience.
 
-R-multiverse currently aims at a space just before production, commonly referred to as QA, in that:
+R-multiverse Community currently aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:
 
 1. Each package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.
-2. The user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at <https://r-multiverse.r-universe.dev>.
+2. The user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, and these may be indicated by the check results at <https://community.r-multiverse.org>.
 
 ## Continuous maintainer-driven deployment
 
-Each package only needs to be registered once. Every new [release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) automatically deploys to <https://r-multiverse.org> without needing to go through R-multiverse again. In other words, the package maintainer is in complete control. This frictionless, maintainer-driven experience was made possible by the incredible infrastructure of [rOpenSci's R-universe system](https://r-multiverse.r-universe.dev) managed by [Jeroen Ooms](https://github.com/jeroen/).
+Each package only needs to be registered once. Every new [release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) automatically deploys to <https://community.r-multiverse.org> without needing to go through R-multiverse again. In other words, the package maintainer is in complete control. This frictionless, maintainer-driven experience was made possible by the incredible infrastructure of [rOpenSci's R-universe system](https://community.r-multiverse.org) managed by [Jeroen Ooms](https://github.com/jeroen/).
 
 ## What about my personal R-universe?
 

@@ -4,8 +4,8 @@ title: "R-multiverse"
 
 <img src="logo/logo-hexbin.png" align="right" width="140" />
 
-A community-curated collection of R package releases, powered by [R-universe](https://r-universe.dev), available for installation from the repository at <https://r-multiverse.org>.
+A community-curated collection of R package releases, powered by [R-universe](https://r-universe.dev), available for installation from the repository at <https://community.r-multiverse.org>.
 
-Anyone can contribute packages to the GitHub repository at <https://github.com/r-multiverse/contributions>. Once a package is registered, every new release is automatically built and checked with results available at <https://r-multiverse.r-universe.dev>. Package maintainers retain complete control over deployment.
+Anyone can contribute packages to the GitHub repository at <https://github.com/r-multiverse/contributions>. Once a package is registered, every new release is automatically built and checked with results available at <https://community.r-multiverse.org>. Package maintainers retain complete control over deployment.
 
 The R-multiverse project originated from the [R Consortium Repositories Working Group](https://github.com/RConsortium/r-repositories-wg).

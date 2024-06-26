@@ -18,11 +18,13 @@ website:
       - about.qmd
       - users.qmd
       - contributors.qmd
+      - team.qmd
       - text: "Policies"
         menu:
           - review.qmd
           - conduct.qmd
           - governance.qmd
+          - security.qmd
     tools:
       - icon: github
         aria-label: "GitHub"
@@ -32,8 +34,8 @@ website:
           - text: Report Issue
             url: https://github.com/r-multiverse/help
       - icon: rocket-takeoff
-        aria-label: "R-multiverse QA Universe"
-        href: https://r-multiverse.r-universe.dev/
+        aria-label: "R-multiverse Community Universe"
+        href: https://community.r-multiverse.org
   page-footer:
     center: "&copy; 2024 the R-multiverse project."
 
