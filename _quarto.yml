@@ -20,9 +20,9 @@ website:
       - contributors.qmd
       - text: "Policies"
         menu:
-          - governance.qmd
           - review.qmd
           - conduct.qmd
+          - governance.qmd
     tools:
       - icon: github
         aria-label: "GitHub"
