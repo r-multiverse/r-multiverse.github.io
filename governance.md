@@ -119,12 +119,12 @@ Voting shall take place publicly under the same Proposal that was initially post
 
 The current composition of the RMC is as follows.
 
-Name in alphabetical order (affiliation)
+Name in alphabetical order
 
-- Charlie Gao (Hibiki AI)
-- Will Landau (Eli Lilly & Co.)
-- Jeroen Ooms (rOpenSci)
-- Maëlle Salmon (rOpensci, cynkra)
+- Charlie Gao
+- Will Landau
+- Jeroen Ooms
+- Maëlle Salmon
 
 ## Language
 
