@@ -27,6 +27,7 @@ website:
     - team.md
     - text: "Policies"
       menu:
+        - terms.md
         - review.md
         - conduct.md
         - text: Governance Document
