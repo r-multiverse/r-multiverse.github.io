@@ -24,6 +24,7 @@ website:
         - text: Production
           url: production.qmd
     - contributors.md
+    - moderators.md
     - team.md
     - policies.md
     tools:
