@@ -70,6 +70,12 @@ and release version of base R from the same day that the R-multiverse snapshot w
 R-multiverse is powered by [R-universe](https://r-universe.dev/), [GitHub Actions](https://github.com/features/actions),
 and the public source code repositories in the [R-multiverse GitHub organization](https://github.com/r-multiverse).
 
+## How you can help
+
+* Spread the word: share R-multiverse with your colleagues.
+* [Contribute your packages](contributors.md) to R-multiverse.
+* Volunteer to become a [moderator](moderators.md).
+
 ## Support
 
 R-multiverse originated from the R Consortium [Repositories Working Group](https://github.com/RConsortium/r-repositories-wg), and it was supported by [R Consortium](https://r-consortium.org) ISC grant 24-ISC-1-05.

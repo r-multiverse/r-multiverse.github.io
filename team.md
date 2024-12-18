@@ -102,7 +102,10 @@ He is one of the maintainers for the [Rocker](https://rocker-project.org/) proje
 ## Roles
 
 * Administrators build the team, develop the infrastructure, and write the policies that govern R-multiverse.
-* Moderators review [package contributions](contributors.md) according to the [package review policy](review.md), and they moderate issues and discussions raised in the [`r-multiverse/help`](https://github.com/r-multiverse/help) repository and other forums on R-multiverse.
+* Moderators review [package contributions](contributors.md) according to the [package review policy](review.md),
+and they moderate issues and discussions raised in the [r-multiverse/help](https://github.com/r-multiverse/help) repository
+and other forums on R-multiverse
+(see [documentation for moderators](moderators.md)).
 
 ## Support
 
