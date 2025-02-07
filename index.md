@@ -20,5 +20,5 @@ about:
 <br>
 <br>
 
-R-multiverse is a new initiative to establish a democratic, multi-stakeholder, and trustworthy R packages repository that runs on the open-source [r-universe](https://r-universe.dev) infrastructure. We strive for [transparent governance](policies.md), high automatation, and quarterly production releases. Visit the [overview page](overview.qmd) page to learn more.
+R-multiverse is a new initiative to establish a trustworthy, community-curated R packages repository that runs on the open-source [r-universe](https://r-universe.dev) infrastructure. We strive for [transparent governance](policies.md), high automatation, and quarterly production releases. Visit the [overview page](overview.qmd) page to learn more.
 
