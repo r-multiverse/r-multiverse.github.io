@@ -13,12 +13,13 @@ which are mutually compatible and meet a high standard of quality.
 
 Production deploys in periodic snapshots throughout the year (details below).
 The current Production snapshot was created on `r snapshot_date()` when base R had version `r snapshot_r()`.
-All packages passed automated checks at that time.
+In the month-long period leading up to the snapshot, dependencies from CRAN were frozen at `r staging_date()`.
+All packages included in Production were passing automated checks on `r snapshot_date()` under these conditions.
 However, the same checks might not pass using a different version of R or
 different versions of dependencies from [CRAN](https://cran.r-project.org/).
 
 For the current snapshot, please use R version `r snapshot_r()` and [CRAN](https://cran.r-project.org/) dependencies
-from `r snapshot_date()` to ensure compatibility.
+from `r staging_date()` to ensure compatibility.
 [Posit Public Package Manager (p3m)](https://packagemanager.posit.co) can help.
 Example:^[Caveat: when setting two URLs in the repos argument, the same package may be in both repositories, and the highest version is always preferred.]
 
@@ -29,7 +30,7 @@ text <- c(
   "  \"polars\",",
   "  repos = c(",
   "    \"https://production.r-multiverse.org\",",
-  sprintf("    \"https://packagemanager.posit.co/cran/%s\"", snapshot_date()),
+  sprintf("    \"https://packagemanager.posit.co/cran/%s\"", staging_date()),
   "  )",
   ")",
   "```"
@@ -64,6 +65,7 @@ Production draws from an intermediate repository called [Staging](#staging).
 The [Staging](#staging) repository is active during the month-long period prior to each snapshot.
 During that time, [Staging](#staging) stabilizes the Production candidates
 while still allowing bug fixes.
+In addition, dependencies from CRAN are frozen at the [Posit Public Package Manager (p3m)](https://packagemanager.posit.co) snapshot from the first day of the staging period.
 
 While [Staging](#staging) is active, if a package is failing one or more [R-multiverse checks](#checks),
 then new releases of that package are continuously pulled from [Community](community.md).
