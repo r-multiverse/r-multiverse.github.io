@@ -8,24 +8,24 @@ R-multiverse provides:
 2. Direct and timely distribution of package releases.
 3. Assurance of package quality for production scenarios.
 
-## R-multiverse repositories
+## R-multiverse tiers
 
-R-multiverse hosts two R package repositories:
+R-multiverse hosts two R package repository tiers:
 
-1. [Community](community.md): an open, inclusive, community-curated repository
+1. [Community](community.md): an open, inclusive, community-curated [universe](https://community.r-multiverse.org)
 of R package releases pulled directly from their maintainers via GitHub and GitLab.
 2. [Production](production.qmd): a quarterly snapshot from [Community](community.md)
 of releases which pass transparent automated checks.
 
 ## Installing packages
 
-Each R-multiverse repository has a URL for the `repos` argument of `install.packages()`.
+Each R-multiverse tier has a URL for the `repos` argument of `install.packages()`.
 For example, to install [`polars`](https://pola-rs.github.io/r-polars/) from [Community](community.md):
 ^[
-Caution: when setting two repositories in the `repos` argument,
+Caution: when setting two URLs in the `repos` argument,
 the same package may be in both.
 `install.packages()` chooses the most current version,
-which could be in either repository.
+which could be in either URL.
 ]
 
 ```r

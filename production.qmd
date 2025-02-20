@@ -1,12 +1,12 @@
 ---
-title: "Production repository"
+title: "Production tier"
 ---
 
 ```{r, eval = TRUE, echo = FALSE}
 source("R/utils.R")
 ```
 
-The Production repository comprises a subset of [Community](community.md) package releases
+The R-multiverse Production tier is a subset of [Community](community.md) package releases
 which are mutually compatible and meet a high standard of quality.
 
 ## Users
@@ -20,7 +20,7 @@ different versions of dependencies from [CRAN](https://cran.r-project.org/).
 For the current snapshot, please use R version `r snapshot_r()` and [CRAN](https://cran.r-project.org/) dependencies
 from `r snapshot_date()` to ensure compatibility.
 [Posit Public Package Manager (p3m)](https://packagemanager.posit.co) can help.
-Example:^[Caveat: when setting two URLs in the repos argument, the same package may be in both repositories, and the highest version is always preferred.]
+Example:^[Caveat: when setting two URLs in the repos argument, the same package may be at both URLs, and the highest version is always preferred.]
 
 ```{r, eval = TRUE, echo = FALSE, results = "asis"}
 text <- c(
@@ -60,8 +60,8 @@ Packages change slowly in Production, but they are mutually compatible.
 ## Staging
 
 Rather than pull releases directly from [Community](community.md),
-Production draws from an intermediate repository called [Staging](#staging).
-The [Staging](#staging) repository is active during the month-long period prior to each snapshot.
+Production draws from an intermediate tier called [Staging](#staging).
+The [Staging](#staging) tier is a [universe](https://staging.r-multiverse.org), and it is active during the month-long period prior to each snapshot.
 During that time, [Staging](#staging) stabilizes the Production candidates
 while still allowing bug fixes.
 
@@ -96,7 +96,7 @@ Example:
 * <https://r-multiverse.org/status/community/polars.html>
 * <https://r-multiverse.org/status/staging/polars.html>
 
-In addition, each package has an RSS feed that updates on each new package release to each repository:^[except in Staging when Staging is currently inactive.]
+In addition, each package has an RSS feed that updates on each new package release to each tier:^[except in Staging when Staging is currently inactive.]
 
 * <https://r-multiverse.org/status/community/polars.xml>
 * <https://r-multiverse.org/status/staging/polars.xml>

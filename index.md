@@ -7,7 +7,7 @@ about:
       text: Overview page
       href: https://r-multiverse.org/overview.html
     - icon: rocket-takeoff
-      text: Community repository
+      text: Community tier
       href: https://community.r-multiverse.org
     - icon: github
       text: Help forum

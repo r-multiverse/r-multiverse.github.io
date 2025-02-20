@@ -1,8 +1,9 @@
 ---
-title: "Community repository"
+title: "Community tier"
 ---
 
-The R-multiverse Community repository simplifies the distribution and deployment of R package releases,
+The R-multiverse Community tier is special [universe](https://community.r-multiverse.org) of registered packages.
+It simplifies the distribution and deployment of R package releases,
 and it puts this power in the hands of package maintainers.
 
 ## Users
@@ -11,10 +12,10 @@ Users can navigate to <https://community.r-multiverse.org> to learn more about p
 To install a package, set the `repos` argument in `install.packages()`.
 For example:
 ^[
-Caution: when setting two repositories in the `repos` argument,
+Caution: when setting two or more URLs in the `repos` argument,
 the same package may be in both.
 `install.packages()` chooses the most current version,
-which could be in either repository.
+which could be at either URL.
 ]
 
 ```r
@@ -33,7 +34,7 @@ the package maintainer directly controls distribution through the
 system on GitHub/GitLab.
 Each new
 [release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)
-automatically deploys to the repository without any manual intervention.
+automatically deploys to the Community tier without any manual intervention.
 ^[This maintainer-driven experience was made possible by the incredible infrastructure of [rOpenSci's R-universe system](https://ropensci.org/r-universe/).]
 
 ## Limitations

@@ -50,7 +50,7 @@ The moderator accepts the contribution if and only if it complies with all polic
 
 ## Removal
 
-R-multiverse may remove a package from its own repositories at any time if the package violates R-multiverse policies.
+R-multiverse may remove a package at any time if the package violates R-multiverse policies.
 
 ## Licenses
 

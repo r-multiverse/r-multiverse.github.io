@@ -17,7 +17,7 @@ website:
     logo-alt: "R-multiverse"
     left:
     - overview.qmd
-    - text: "Repositories"
+    - text: "Tiers"
       menu:
         - text: Community
           url: community.md

@@ -51,19 +51,19 @@ in the title of the pull request.
 ## Community
 
 After registration, the latest release of the package will
-automatically appear in the [Community](community.md) repository.
+automatically appear in the [Community](community.md) tier.
 [GitHub Actions](https://github.com/features/actions) workflows periodically
 read all the [package listings](https://github.com/r-multiverse/contributions/tree/main/packages),
 generate an [R-universe](https://r-universe.dev) [`packages.json`](https://github.com/r-multiverse/community/blob/main/packages.json) file,
-and host the [Community](community.md) repository as a [universe](https://r-universe.dev).
-The [Community](community.md) repository automatically distributes new releases
+and host the [Community](community.md) tier as a [universe](https://r-universe.dev).
+The [Community](community.md) tier automatically distributes new releases
 that the package maintainer 
 [creates on GitHub](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)/[GitLab](https://docs.gitlab.com/ee/user/project/releases/).
 
 ## Production
 
-R-multiverse updates the [Production](production.qmd) repository in quarterly snapshots.
-As part of this process, an intermediate Staging repository hosts
+R-multiverse updates the [Production](production.qmd) tier in quarterly snapshots.
+As part of this process, an intermediate [Staging](production.qmd#staging) tier hosts
 packages and performs checks.
 Visit [this page](production.qmd) to learn more about [Production](production.qmd).
 
