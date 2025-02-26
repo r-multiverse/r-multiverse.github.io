@@ -161,130 +161,109 @@
     "text": "The following policies govern all aspects of R-multiverse, including but not limited to administration, acceptable use, and security.\n\nGovernance\nSecurity\nAcceptable Use\nTerms of Use\nCode of Conduct\nReview"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "logo/LICENSE.html",
+    "href": "logo/LICENSE.html",
     "title": "R-multiverse",
     "section": "",
-    "text": "R-multiverse is a new initiative to establish a trustworthy, community-curated R package repository that runs on the open-source r-universe infrastructure. We strive for transparent governance, high automation, and quarterly production releases. Visit the overview page to learn more."
+    "text": "This license and copyright notice applies only to the logo images of the R-multiverse project. Please refer to other licenses and copyright notices for all other parts of the project, such as the code and documentation.\nR-multiverse logo images copyright (c) 2024 Eli Lilly and Company, Hibiki AI Limited\nAttribution-ShareAlike 4.0 International\n=======================================================================\nCreative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\n Considerations for licensors: Our public licenses are\n intended for use by those authorized to give the public\n permission to use material in ways otherwise restricted by\n copyright and certain other rights. Our licenses are\n irrevocable. Licensors should read and understand the terms\n and conditions of the license they choose before applying it.\n Licensors should also secure all rights necessary before\n applying our licenses so that the public can reuse the\n material as expected. Licensors should clearly mark any\n material not subject to the license. This includes other CC-\n licensed material, or material used under an exception or\n limitation to copyright. More considerations for licensors:\nwiki.creativecommons.org/Considerations_for_licensors\n\n Considerations for the public: By using one of our public\n licenses, a licensor grants the public permission to use the\n licensed material under specified terms and conditions. If\n the licensor's permission is not necessary for any reason--for\n example, because of any applicable exception or limitation to\n copyright--then that use is not regulated by the license. Our\n licenses grant only permissions under copyright and certain\n other rights that a licensor has authority to grant. Use of\n the licensed material may still be restricted for other\n reasons, including because others have copyright or other\n rights in the material. A licensor may make special requests,\n such as asking that all changes be marked or described.\n Although not required by our licenses, you are encouraged to\n respect those requests where reasonable. More considerations\n for the public:\nwiki.creativecommons.org/Considerations_for_licensees\n=======================================================================\nCreative Commons Attribution-ShareAlike 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\n\nreproduce and Share the Licensed Material, in whole or in part; and\nproduce, reproduce, and Share Adapted Material.\n\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)\n\nnever produces Adapted Material.\n\nDownstream recipients.\n\nOffer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nAdditional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nNo downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\n\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\n\nretain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nindicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nindicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\nTO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n=======================================================================\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
   },
   {
-    "objectID": "contributors.html",
-    "href": "contributors.html",
-    "title": "Contributors",
+    "objectID": "governance.html",
+    "href": "governance.html",
+    "title": "R-multiverse Governance",
     "section": "",
-    "text": "This page explains how to contribute packages to R-multiverse."
+    "text": "The R-multiverse project is run in a collaborative and open way. Portions of this governance policy have been inspired by that of the Apache Software Foundation.\nIts purpose is to formalize decision-making for the project and facilitate management by the R-multiverse Management Committee (RMC), whilst allowing for and anticipating evolution of both the project and composition of the RMC over time."
   },
   {
-    "objectID": "contributors.html#preparation",
-    "href": "contributors.html#preparation",
-    "title": "Contributors",
-    "section": "Preparation",
-    "text": "Preparation\nR-multiverse policies govern all forms of participation in R-multiverse, including package contributions. Administrators, moderators, and contributors are all subject to the terms therein. The review policy specifically governs package contribution and review.\nIn addition, R-multiverse pulls R packages directly from releases on GitHub and GitLab. Before contributing a package to R-multiverse, please ensure it is available in a public GitHub/GitLab source code repository with at least one release (example)."
+    "objectID": "governance.html#r-multiverse-mission",
+    "href": "governance.html#r-multiverse-mission",
+    "title": "R-multiverse Governance",
+    "section": "R-multiverse Mission",
+    "text": "R-multiverse Mission\nThe mission of R-multiverse is to provide a high-quality, open repository system for the general R community.\nR-multiverse is committed to free and equal access, and its source code is released under the open-source MIT License.\n\nR-multiverse is non-commercial but commercially-aware\nWe invite third parties, including for-profit corporations, to contribute to R-multiverse and use it for their own purposes.\nHowever it is important for the longevity and community health of R-multiverse that the community be recognised as the primary contributor to the project and that the project continues to serve all members of the community equally.\nThe RMC actively track the corporate affiliations of administrators and moderators, and strives to ensure influence around any particular aspect of the project is not overly skewed towards a single corporate entity.\n\n\nChanges to Governance\nIt is expected that this governance document will evolve over time as needs arise, and the process for updating this document is described in further sections below."
   },
   {
-    "objectID": "contributors.html#registration",
-    "href": "contributors.html#registration",
-    "title": "Contributors",
-    "section": "Registration",
-    "text": "Registration\nTo register a package with R-multiverse:\n\nNavigate to https://github.com/r-multiverse/contributions.\nContribute a package listing via GitHub pull request.\n\nWatch this 1-minute video to learn how:\n\n\nPackage listings\nA package listing is a text file in https://github.com/r-multiverse/contributions/tree/main/packages which points to the home of the package on GitHub/GitLab. The file name of each listing is the name of the package. In most cases, the file itself contains the package URL on GitHub or GitLab (example). But if the package is a subdirectory of the GitHub/GitLab repository, you may instead write custom JSON list with fields package, url, subdir, and branch: \"*release\" (example).\n\n\nPull request review\nAn automated process periodically scans and reviews each new pull request to https://github.com/r-multiverse/contributions. The bot either merges the pull request or flags it for manual review by a moderator, depending on criteria explained in the review policy.\nSome moderators only review packages specific to a subject matter area, so please consider mentioning a topic in the title of the pull request."
+    "objectID": "governance.html#r-multiverse-stakeholders",
+    "href": "governance.html#r-multiverse-stakeholders",
+    "title": "R-multiverse Governance",
+    "section": "R-multiverse Stakeholders",
+    "text": "R-multiverse Stakeholders\nWe recognize four groups of individuals related to the project.\n\nUser\nA User is someone who uses R-multiverse by downloading and installing packages from the R-multiverse repositories.\n\n\nContributor\nA Contributor is someone who seeks to make a modification to the R-multiverse repositories and/or the GitHub organization. This would most commonly be by contributing a package at r-multiverse/contributions, where the Contributor is often the maintainer of the contributed package. Contributions may also take the form of feedback in the form of bug reports and feature suggestions in the r-multiverse/help repository, or more generally by answering questions from the community in this repository.\n\n\nModerator\nA Moderator is someone who has been invited by the R-multiverse Management Committee (RMC) to take on a moderator role. This entails certain rights and associated responsibilities which are outlined in full in the Review Policy, which may evolve over time. A Moderator may vet contributions and decide to admit or remove contributed packages from the repositories in accordance with the Review Policy. A Moderator may also moderate issues and discussions raised by Contributors in the r-multiverse/help repository or other forums on R-multiverse.\n\n\nAdministrator\nAn Administrator is a member of the R-multiverse Management Committee (RMC). Administrators have write access to all code repositories under the r-multiverse GitHub organization and maintain the infrastructure for the project. They have the right to create Proposals, cast votes on all Proposals on community-related decisions, the right to appoint Moderators, and the right to change the composition of the RMC itself. The RMC as a whole is the entity that controls the project, and is responsible for the continued shaping of this governance document and other policies, including the Review Policy and Code of Conduct."
   },
   {
-    "objectID": "contributors.html#community",
-    "href": "contributors.html#community",
-    "title": "Contributors",
-    "section": "Community",
-    "text": "Community\nAfter registration, the latest release of the package will automatically appear in the Community repository. GitHub Actions workflows periodically read all the package listings, generate an R-universe packages.json file, and host the Community repository as a universe. The Community repository automatically distributes new releases that the package maintainer creates on GitHub/GitLab."
+    "objectID": "governance.html#project-management-and-collaboration",
+    "href": "governance.html#project-management-and-collaboration",
+    "title": "R-multiverse Governance",
+    "section": "Project Management and Collaboration",
+    "text": "Project Management and Collaboration\nThe R-multiverse project is managed through a collaborative, consensus-based approach.\n\nCommunication\nCommunication is always done publicly via GitHub, and all decisions related to the project are made in public.\nExceptions exists for:\n\nConfidential security and conduct-related matters, for which there is a private GitHub repository accessible by administrators only.\nReporting, tracking, and resolving policy violations. For this, there is a second private GitHub repository accessible by administrators and moderators only. Policy violations are always reported publicly to https://github.com/r-multiverse/help after they are resolved, without disclosing the identities of the victims or Moderators involved.\n\nThe use of these two private repositories ensures that even confidential conversations remain accountable and open to audit.\nPrivate mailing lists are not used by the project.\n\n\nR-multiverse Management Committee (RMC)\nThe R-multiverse Management Committee (RMC) is responsible for the active management of the R-multiverse project. The main role of the RMC is to further the long-term development and health of the community as a whole, and to ensure that balanced and broad-based user engagement and contributor participation takes place.\nAs part of this, the RMC has the sole authority to propose and approve changes to this governance document and all policies regarding operation of the R-multiverse GitHub repositories.\nThe RMC collectively appoint and delegate authority to moderators to perform a limited subset of duties.\nThe RMC is responsible for protecting the R-multiverse name, brand and reputation, and for enforcing adherence to this document.\nWhere this is jeopardised through the actions of an Administrator, Moderator or Contributor, the RMC will have the authority to immediately remove that person from their capacity in that role, not requiring the usual one month notice period for enacting Proposals.\n\n\nChanges to the RMC\nProposals to add or remove members of the RMC shall be put forward publicly by any member of the RMC, and shall be treated in the same way as any other Proposal, as described below.\n\n\nProposals\nAll changes to this governance document, or to a policy document such as the Code of Conduct or Review Policy that governs how the repositories operate will be posted for comment at the r-multiverse/help repository as a Proposal. All members of the community are invited to participate, and Proposals may be withdrawn or revised by their initial proposer as a result. Revisions likely to be regarded as material shall be proposed as a new Proposal, with reference to the preceding discussion.\nProposals will be deemed to have been adopted if both one calendar month has passed after notice has been publicly posted and either (i) there has been no dissent from from an administrator or (ii) dissent by an administrator was recorded and the Proposal has been passed after voting has taken place as per the Voting Process described below.\n\n\nVoting Process\nDecision-making is by consensus of the RMC as far as possible. All policy changes, including changes to this document, shall be posted publicly to the r-multiverse/help repository as a Proposal. If there is no dissent by another administrator, the Proposal comes into effect one calendar month after it is posted.\nIf there is dissent by an administrator, they should post a reasoned reply within the one calendar month notice period. However, no one administrator has a veto. Where there is dissent, voting shall take place among administrators to decide on an issue, with a simple majority of votes required for a Proposal to pass.\nAs illustration, if the total number of administrators is six, then at least four votes are required to pass a Proposal.\nIf a Proposal is passed, it will come into effect one calendar month after the Proposal was initially posted. If a Proposal is not passed within one calendar month of the posting of the Proposal, then the Proposal lapses and is not enacted until such a time that it passes.\nVoting shall take place publicly under the same Proposal that was initially posted."
   },
   {
-    "objectID": "contributors.html#production",
-    "href": "contributors.html#production",
-    "title": "Contributors",
-    "section": "Production",
-    "text": "Production\nR-multiverse updates the Production repository in quarterly snapshots. As part of this process, an intermediate Staging repository hosts packages and performs checks. Visit this page to learn more about Production."
+    "objectID": "governance.html#project-leadership",
+    "href": "governance.html#project-leadership",
+    "title": "R-multiverse Governance",
+    "section": "Project Leadership",
+    "text": "Project Leadership\n\nR-multiverse Management Committee (RMC)\nThe current composition of the RMC is as follows.\nName in alphabetical order\n\nCharlie Gao\nWill Landau\nJeroen Ooms\nMaëlle Salmon"
   },
   {
-    "objectID": "contributors.html#status",
-    "href": "contributors.html#status",
-    "title": "Contributors",
-    "section": "Status",
-    "text": "Status\nIt is good practice to check the health of your contributed package using R-multiverse status system. You can read more about it here in the Production page."
+    "objectID": "governance.html#language",
+    "href": "governance.html#language",
+    "title": "R-multiverse Governance",
+    "section": "Language",
+    "text": "Language\nThis document may appear in other languages on the R-multiverse website or elsewhere. In case of any discrepancy, the English version shall prevail."
   },
   {
-    "objectID": "contributors.html#topics",
-    "href": "contributors.html#topics",
-    "title": "Contributors",
-    "section": "Topics",
-    "text": "Topics\nR-multiverse has a “topics” system for organizing packages into subject matter areas. Each topic has a page that lists the packages in its area (example). To contribute a package to a topic, simply list the topic URL in the DESCRIPTION file (example). and then create a new GitHub/GitLab release. A bot periodically scans Community and updates the list of packages in each topic.\nTo contribute a topic, submit a pull request to https://github.com/r-multiverse/topics to add a new text file (with no file extension) whose name is the topic name and whose contents describe the topic. The bot generates HTML pages from these text files."
-  },
-  {
-    "objectID": "contributors.html#badges",
-    "href": "contributors.html#badges",
-    "title": "Contributors",
-    "section": "Badges",
-    "text": "Badges\n\nTo add a dynamic ‘R-multiverse’ badge for package readme files, like the one above, copy the following markdown snippet, replacing ‘pkgNAME’ with the actual package name in both places it appears:\n[![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2FpkgNAME&query=%24.Version&label=r-multiverse)](https://community.r-multiverse.org/pkgNAME)"
-  },
-  {
-    "objectID": "contributors.html#deregistration",
-    "href": "contributors.html#deregistration",
-    "title": "Contributors",
-    "section": "Deregistration",
-    "text": "Deregistration\nIf it becomes necessary to deregister a package from R-multiverse, you may submit a pull request to remove the package listing. To prevent a package of the same name from registering in R-multiverse, you may contribute a listing with free-form text (not a URL or JSON list). Packages with missing or free-form listings are removed from Community, and the subsequent Production snapshot will not include them."
-  },
-  {
-    "objectID": "contributors.html#help",
-    "href": "contributors.html#help",
-    "title": "Contributors",
-    "section": "Help",
-    "text": "Help\nPlease report bugs to https://github.com/r-multiverse/help/issues and send other feedback and questions to https://github.com/r-multiverse/help/discussions. Please note that https://github.com/r-multiverse/contributions can only accept pull requests to add or modify package entries."
-  },
-  {
-    "objectID": "community.html",
-    "href": "community.html",
-    "title": "Community repository",
+    "objectID": "conduct.html",
+    "href": "conduct.html",
+    "title": "Code of Conduct",
     "section": "",
-    "text": "The R-multiverse Community repository simplifies the distribution and deployment of R package releases, and it puts this power in the hands of package maintainers."
+    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
   },
   {
-    "objectID": "community.html#users",
-    "href": "community.html#users",
-    "title": "Community repository",
-    "section": "Users",
-    "text": "Users\nUsers can navigate to https://community.r-multiverse.org to learn more about packages in Community. To install a package, set the repos argument in install.packages(). For example: 1\ninstall.packages(\n  \"polars\",\n  repos = c(\"https://community.r-multiverse.org\", getOption(\"repos\"))\n)"
-  },
-  {
-    "objectID": "community.html#contributors",
-    "href": "community.html#contributors",
-    "title": "Community repository",
-    "section": "Contributors",
-    "text": "Contributors\nAnyone can contribute packages to Community via GitHub. After a one-time registration process for a package, the package maintainer directly controls distribution through the release system on GitHub/GitLab. Each new release automatically deploys to the repository without any manual intervention. 2"
-  },
-  {
-    "objectID": "community.html#limitations",
-    "href": "community.html#limitations",
-    "title": "Community repository",
-    "section": "Limitations",
-    "text": "Limitations\nA traditional software version cycle begins with the development phase, where bugs are identified and fixed, and ends with the production phase, which promises a seamless user experience. Community aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:\n\nEach package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, as indicated by their check results, publicly available at https://community.r-multiverse.org."
-  },
-  {
-    "objectID": "community.html#personal-universes",
-    "href": "community.html#personal-universes",
-    "title": "Community repository",
-    "section": "Personal universes",
-    "text": "Personal universes\nYou can deploy a package through a personal or organization-level universe even if the package also is part of R-multiverse. In fact, a personal universe may help reproduce and diagnose R CMD check issues as you prepare a package for Production."
-  },
-  {
-    "objectID": "community.html#footnotes",
-    "href": "community.html#footnotes",
-    "title": "Community repository",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\n Caution: when setting two repositories in the repos argument, the same package may be in both. install.packages() chooses the most current version, which could be in either repository.↩︎\nThis maintainer-driven experience was made possible by the incredible infrastructure of rOpenSci’s R-universe system.↩︎"
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "MIT License",
+    "objectID": "conduct.html#our-pledge",
+    "href": "conduct.html#our-pledge",
+    "title": "Code of Conduct",
     "section": "",
-    "text": "MIT License\nCopyright (c) 2025 Eli Lilly and Company\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
+  },
+  {
+    "objectID": "conduct.html#our-standards",
+    "href": "conduct.html#our-standards",
+    "title": "Code of Conduct",
+    "section": "Our Standards",
+    "text": "Our Standards\nExamples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nPlagiarism\nCopyright violations\nOther conduct which could reasonably be considered inappropriate in a professional setting"
+  },
+  {
+    "objectID": "conduct.html#enforcement-responsibilities",
+    "href": "conduct.html#enforcement-responsibilities",
+    "title": "Code of Conduct",
+    "section": "Enforcement Responsibilities",
+    "text": "Enforcement Responsibilities\nCommunity leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate."
+  },
+  {
+    "objectID": "conduct.html#scope",
+    "href": "conduct.html#scope",
+    "title": "Code of Conduct",
+    "section": "Scope",
+    "text": "Scope\nThis Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event."
+  },
+  {
+    "objectID": "conduct.html#enforcement",
+    "href": "conduct.html#enforcement",
+    "title": "Code of Conduct",
+    "section": "Enforcement",
+    "text": "Enforcement\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at will.landau.oss@gmail.com. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident."
+  },
+  {
+    "objectID": "conduct.html#enforcement-guidelines",
+    "href": "conduct.html#enforcement-guidelines",
+    "title": "Code of Conduct",
+    "section": "Enforcement Guidelines",
+    "text": "Enforcement Guidelines\nCommunity leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n1. Correction\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n2. Warning\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n3. Temporary Ban\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n4. Permanent Ban\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community."
+  },
+  {
+    "objectID": "conduct.html#attribution",
+    "href": "conduct.html#attribution",
+    "title": "Code of Conduct",
+    "section": "Attribution",
+    "text": "Attribution\nThis Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
   },
   {
     "objectID": "aup.html",
@@ -371,109 +350,221 @@
     "text": "11. Disclaimer of Liability\nThe Repository Administrators and Moderators, collectively and individually, shall not be held liable for any content posted by Users or Contributors. All content in the Repository is provided “as-is”, and the Administrators and Moderators, collectively and individually, disclaim any responsibility for damages or losses resulting from content submitted by Users or Contributors."
   },
   {
-    "objectID": "conduct.html",
-    "href": "conduct.html",
-    "title": "Code of Conduct",
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "MIT License",
     "section": "",
-    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
+    "text": "MIT License\nCopyright (c) 2025 Eli Lilly and Company\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
   },
   {
-    "objectID": "conduct.html#our-pledge",
-    "href": "conduct.html#our-pledge",
-    "title": "Code of Conduct",
+    "objectID": "community.html",
+    "href": "community.html",
+    "title": "Community repository",
     "section": "",
-    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
+    "text": "The R-multiverse Community repository simplifies the distribution and deployment of R package releases, and it puts this power in the hands of package maintainers."
   },
   {
-    "objectID": "conduct.html#our-standards",
-    "href": "conduct.html#our-standards",
-    "title": "Code of Conduct",
-    "section": "Our Standards",
-    "text": "Our Standards\nExamples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nPlagiarism\nCopyright violations\nOther conduct which could reasonably be considered inappropriate in a professional setting"
+    "objectID": "community.html#users",
+    "href": "community.html#users",
+    "title": "Community repository",
+    "section": "Users",
+    "text": "Users\nUsers can navigate to https://community.r-multiverse.org to learn more about packages in Community. To install a package, set the repos argument in install.packages(). For example: 1\ninstall.packages(\n  \"polars\",\n  repos = c(\"https://community.r-multiverse.org\", getOption(\"repos\"))\n)"
   },
   {
-    "objectID": "conduct.html#enforcement-responsibilities",
-    "href": "conduct.html#enforcement-responsibilities",
-    "title": "Code of Conduct",
-    "section": "Enforcement Responsibilities",
-    "text": "Enforcement Responsibilities\nCommunity leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate."
+    "objectID": "community.html#contributors",
+    "href": "community.html#contributors",
+    "title": "Community repository",
+    "section": "Contributors",
+    "text": "Contributors\nAnyone can contribute packages to Community via GitHub. After a one-time registration process for a package, the package maintainer directly controls distribution through the release system on GitHub/GitLab. Each new release automatically deploys to the repository without any manual intervention. 2"
   },
   {
-    "objectID": "conduct.html#scope",
-    "href": "conduct.html#scope",
-    "title": "Code of Conduct",
-    "section": "Scope",
-    "text": "Scope\nThis Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event."
+    "objectID": "community.html#limitations",
+    "href": "community.html#limitations",
+    "title": "Community repository",
+    "section": "Limitations",
+    "text": "Limitations\nA traditional software version cycle begins with the development phase, where bugs are identified and fixed, and ends with the production phase, which promises a seamless user experience. Community aims at a space just before production, commonly referred to as Quality Assurance (QA). This means that:\n\nEach package release has the full endorsement of its own maintainer. R-multiverse always provides a version that its developer chose to distribute for general use.\nThe user is still responsible for judging whether a package is appropriate to use. Some releases may still have issues, as indicated by their check results, publicly available at https://community.r-multiverse.org."
   },
   {
-    "objectID": "conduct.html#enforcement",
-    "href": "conduct.html#enforcement",
-    "title": "Code of Conduct",
-    "section": "Enforcement",
-    "text": "Enforcement\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at will.landau.oss@gmail.com. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident."
+    "objectID": "community.html#personal-universes",
+    "href": "community.html#personal-universes",
+    "title": "Community repository",
+    "section": "Personal universes",
+    "text": "Personal universes\nYou can deploy a package through a personal or organization-level universe even if the package also is part of R-multiverse. In fact, a personal universe may help reproduce and diagnose R CMD check issues as you prepare a package for Production."
   },
   {
-    "objectID": "conduct.html#enforcement-guidelines",
-    "href": "conduct.html#enforcement-guidelines",
-    "title": "Code of Conduct",
-    "section": "Enforcement Guidelines",
-    "text": "Enforcement Guidelines\nCommunity leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n1. Correction\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n2. Warning\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n3. Temporary Ban\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n4. Permanent Ban\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community."
+    "objectID": "community.html#footnotes",
+    "href": "community.html#footnotes",
+    "title": "Community repository",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n Caution: when setting two repositories in the repos argument, the same package may be in both. install.packages() chooses the most current version, which could be in either repository.↩︎\nThis maintainer-driven experience was made possible by the incredible infrastructure of rOpenSci’s R-universe system.↩︎"
   },
   {
-    "objectID": "conduct.html#attribution",
-    "href": "conduct.html#attribution",
-    "title": "Code of Conduct",
-    "section": "Attribution",
-    "text": "Attribution\nThis Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
-  },
-  {
-    "objectID": "governance.html",
-    "href": "governance.html",
-    "title": "R-multiverse Governance",
+    "objectID": "contributors.html",
+    "href": "contributors.html",
+    "title": "Contributors",
     "section": "",
-    "text": "The R-multiverse project is run in a collaborative and open way. Portions of this governance policy have been inspired by that of the Apache Software Foundation.\nIts purpose is to formalize decision-making for the project and facilitate management by the R-multiverse Management Committee (RMC), whilst allowing for and anticipating evolution of both the project and composition of the RMC over time."
+    "text": "This page explains how to contribute packages to R-multiverse."
   },
   {
-    "objectID": "governance.html#r-multiverse-mission",
-    "href": "governance.html#r-multiverse-mission",
-    "title": "R-multiverse Governance",
-    "section": "R-multiverse Mission",
-    "text": "R-multiverse Mission\nThe mission of R-multiverse is to provide a high-quality, open repository system for the general R community.\nR-multiverse is committed to free and equal access, and its source code is released under the open-source MIT License.\n\nR-multiverse is non-commercial but commercially-aware\nWe invite third parties, including for-profit corporations, to contribute to R-multiverse and use it for their own purposes.\nHowever it is important for the longevity and community health of R-multiverse that the community be recognised as the primary contributor to the project and that the project continues to serve all members of the community equally.\nThe RMC actively track the corporate affiliations of administrators and moderators, and strives to ensure influence around any particular aspect of the project is not overly skewed towards a single corporate entity.\n\n\nChanges to Governance\nIt is expected that this governance document will evolve over time as needs arise, and the process for updating this document is described in further sections below."
+    "objectID": "contributors.html#preparation",
+    "href": "contributors.html#preparation",
+    "title": "Contributors",
+    "section": "Preparation",
+    "text": "Preparation\nR-multiverse policies govern all forms of participation in R-multiverse, including package contributions. Administrators, moderators, and contributors are all subject to the terms therein. The review policy specifically governs package contribution and review.\nIn addition, R-multiverse pulls R packages directly from releases on GitHub and GitLab. Before contributing a package to R-multiverse, please ensure it is available in a public GitHub/GitLab source code repository with at least one release (example)."
   },
   {
-    "objectID": "governance.html#r-multiverse-stakeholders",
-    "href": "governance.html#r-multiverse-stakeholders",
-    "title": "R-multiverse Governance",
-    "section": "R-multiverse Stakeholders",
-    "text": "R-multiverse Stakeholders\nWe recognize four groups of individuals related to the project.\n\nUser\nA User is someone who uses R-multiverse by downloading and installing packages from the R-multiverse repositories.\n\n\nContributor\nA Contributor is someone who seeks to make a modification to the R-multiverse repositories and/or the GitHub organization. This would most commonly be by contributing a package at r-multiverse/contributions, where the Contributor is often the maintainer of the contributed package. Contributions may also take the form of feedback in the form of bug reports and feature suggestions in the r-multiverse/help repository, or more generally by answering questions from the community in this repository.\n\n\nModerator\nA Moderator is someone who has been invited by the R-multiverse Management Committee (RMC) to take on a moderator role. This entails certain rights and associated responsibilities which are outlined in full in the Review Policy, which may evolve over time. A Moderator may vet contributions and decide to admit or remove contributed packages from the repositories in accordance with the Review Policy. A Moderator may also moderate issues and discussions raised by Contributors in the r-multiverse/help repository or other forums on R-multiverse.\n\n\nAdministrator\nAn Administrator is a member of the R-multiverse Management Committee (RMC). Administrators have write access to all code repositories under the r-multiverse GitHub organization and maintain the infrastructure for the project. They have the right to create Proposals, cast votes on all Proposals on community-related decisions, the right to appoint Moderators, and the right to change the composition of the RMC itself. The RMC as a whole is the entity that controls the project, and is responsible for the continued shaping of this governance document and other policies, including the Review Policy and Code of Conduct."
+    "objectID": "contributors.html#registration",
+    "href": "contributors.html#registration",
+    "title": "Contributors",
+    "section": "Registration",
+    "text": "Registration\nTo register a package with R-multiverse:\n\nNavigate to https://github.com/r-multiverse/contributions.\nContribute a package listing via GitHub pull request.\n\nWatch this 1-minute video to learn how:\n\n\nPackage listings\nA package listing is a text file in https://github.com/r-multiverse/contributions/tree/main/packages which points to the home of the package on GitHub/GitLab. The file name of each listing is the name of the package. In most cases, the file itself contains the package URL on GitHub or GitLab (example). But if the package is a subdirectory of the GitHub/GitLab repository, you may instead write custom JSON list with fields package, url, subdir, and branch: \"*release\" (example).\n\n\nPull request review\nAn automated process periodically scans and reviews each new pull request to https://github.com/r-multiverse/contributions. The bot either merges the pull request or flags it for manual review by a moderator, depending on criteria explained in the review policy.\nSome moderators only review packages specific to a subject matter area, so please consider mentioning a topic in the title of the pull request."
   },
   {
-    "objectID": "governance.html#project-management-and-collaboration",
-    "href": "governance.html#project-management-and-collaboration",
-    "title": "R-multiverse Governance",
-    "section": "Project Management and Collaboration",
-    "text": "Project Management and Collaboration\nThe R-multiverse project is managed through a collaborative, consensus-based approach.\n\nCommunication\nCommunication is always done publicly via GitHub, and all decisions related to the project are made in public.\nExceptions exists for:\n\nConfidential security and conduct-related matters, for which there is a private GitHub repository accessible by administrators only.\nReporting, tracking, and resolving policy violations. For this, there is a second private GitHub repository accessible by administrators and moderators only. Policy violations are always reported publicly to https://github.com/r-multiverse/help after they are resolved, without disclosing the identities of the victims or Moderators involved.\n\nThe use of these two private repositories ensures that even confidential conversations remain accountable and open to audit.\nPrivate mailing lists are not used by the project.\n\n\nR-multiverse Management Committee (RMC)\nThe R-multiverse Management Committee (RMC) is responsible for the active management of the R-multiverse project. The main role of the RMC is to further the long-term development and health of the community as a whole, and to ensure that balanced and broad-based user engagement and contributor participation takes place.\nAs part of this, the RMC has the sole authority to propose and approve changes to this governance document and all policies regarding operation of the R-multiverse GitHub repositories.\nThe RMC collectively appoint and delegate authority to moderators to perform a limited subset of duties.\nThe RMC is responsible for protecting the R-multiverse name, brand and reputation, and for enforcing adherence to this document.\nWhere this is jeopardised through the actions of an Administrator, Moderator or Contributor, the RMC will have the authority to immediately remove that person from their capacity in that role, not requiring the usual one month notice period for enacting Proposals.\n\n\nChanges to the RMC\nProposals to add or remove members of the RMC shall be put forward publicly by any member of the RMC, and shall be treated in the same way as any other Proposal, as described below.\n\n\nProposals\nAll changes to this governance document, or to a policy document such as the Code of Conduct or Review Policy that governs how the repositories operate will be posted for comment at the r-multiverse/help repository as a Proposal. All members of the community are invited to participate, and Proposals may be withdrawn or revised by their initial proposer as a result. Revisions likely to be regarded as material shall be proposed as a new Proposal, with reference to the preceding discussion.\nProposals will be deemed to have been adopted if both one calendar month has passed after notice has been publicly posted and either (i) there has been no dissent from from an administrator or (ii) dissent by an administrator was recorded and the Proposal has been passed after voting has taken place as per the Voting Process described below.\n\n\nVoting Process\nDecision-making is by consensus of the RMC as far as possible. All policy changes, including changes to this document, shall be posted publicly to the r-multiverse/help repository as a Proposal. If there is no dissent by another administrator, the Proposal comes into effect one calendar month after it is posted.\nIf there is dissent by an administrator, they should post a reasoned reply within the one calendar month notice period. However, no one administrator has a veto. Where there is dissent, voting shall take place among administrators to decide on an issue, with a simple majority of votes required for a Proposal to pass.\nAs illustration, if the total number of administrators is six, then at least four votes are required to pass a Proposal.\nIf a Proposal is passed, it will come into effect one calendar month after the Proposal was initially posted. If a Proposal is not passed within one calendar month of the posting of the Proposal, then the Proposal lapses and is not enacted until such a time that it passes.\nVoting shall take place publicly under the same Proposal that was initially posted."
+    "objectID": "contributors.html#community",
+    "href": "contributors.html#community",
+    "title": "Contributors",
+    "section": "Community",
+    "text": "Community\nAfter registration, the latest release of the package will automatically appear in the Community repository. GitHub Actions workflows periodically read all the package listings, generate an R-universe packages.json file, and host the Community repository as a universe. The Community repository automatically distributes new releases that the package maintainer creates on GitHub/GitLab."
   },
   {
-    "objectID": "governance.html#project-leadership",
-    "href": "governance.html#project-leadership",
-    "title": "R-multiverse Governance",
-    "section": "Project Leadership",
-    "text": "Project Leadership\n\nR-multiverse Management Committee (RMC)\nThe current composition of the RMC is as follows.\nName in alphabetical order\n\nCharlie Gao\nWill Landau\nJeroen Ooms\nMaëlle Salmon"
+    "objectID": "contributors.html#production",
+    "href": "contributors.html#production",
+    "title": "Contributors",
+    "section": "Production",
+    "text": "Production\nR-multiverse updates the Production repository in quarterly snapshots. As part of this process, an intermediate Staging repository hosts packages and performs checks. Visit this page to learn more about Production."
   },
   {
-    "objectID": "governance.html#language",
-    "href": "governance.html#language",
-    "title": "R-multiverse Governance",
-    "section": "Language",
-    "text": "Language\nThis document may appear in other languages on the R-multiverse website or elsewhere. In case of any discrepancy, the English version shall prevail."
+    "objectID": "contributors.html#status",
+    "href": "contributors.html#status",
+    "title": "Contributors",
+    "section": "Status",
+    "text": "Status\nIt is good practice to check the health of your contributed package using R-multiverse status system. You can read more about it here in the Production page."
   },
   {
-    "objectID": "logo/LICENSE.html",
-    "href": "logo/LICENSE.html",
+    "objectID": "contributors.html#topics",
+    "href": "contributors.html#topics",
+    "title": "Contributors",
+    "section": "Topics",
+    "text": "Topics\nR-multiverse has a “topics” system for organizing packages into subject matter areas. Each topic has a page that lists the packages in its area (example). To contribute a package to a topic, simply list the topic URL in the DESCRIPTION file (example). and then create a new GitHub/GitLab release. A bot periodically scans Community and updates the list of packages in each topic.\nTo contribute a topic, submit a pull request to https://github.com/r-multiverse/topics to add a new text file (with no file extension) whose name is the topic name and whose contents describe the topic. The bot generates HTML pages from these text files."
+  },
+  {
+    "objectID": "contributors.html#badges",
+    "href": "contributors.html#badges",
+    "title": "Contributors",
+    "section": "Badges",
+    "text": "Badges\n\nTo add a dynamic ‘R-multiverse’ badge for package readme files, like the one above, copy the following markdown snippet, replacing ‘pkgNAME’ with the actual package name in both places it appears:\n[![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2FpkgNAME&query=%24.Version&label=r-multiverse)](https://community.r-multiverse.org/pkgNAME)"
+  },
+  {
+    "objectID": "contributors.html#deregistration",
+    "href": "contributors.html#deregistration",
+    "title": "Contributors",
+    "section": "Deregistration",
+    "text": "Deregistration\nIf it becomes necessary to deregister a package from R-multiverse, you may submit a pull request to edit the package listing. Please replace the URL/JSON contents with unstructured/free-form text to explain the reason for removing the package. To prevent a package of the same name from registering in R-multiverse, please do not delete the package listing file unless the package name itself violates R-multiverse policies. Packages with missing or free-form listings are removed from Community, and the subsequent Production snapshot will not include them."
+  },
+  {
+    "objectID": "contributors.html#help",
+    "href": "contributors.html#help",
+    "title": "Contributors",
+    "section": "Help",
+    "text": "Help\nPlease report bugs to https://github.com/r-multiverse/help/issues and send other feedback and questions to https://github.com/r-multiverse/help/discussions. Please note that https://github.com/r-multiverse/contributions can only accept pull requests to add or modify package entries."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "R-multiverse",
     "section": "",
-    "text": "This license and copyright notice applies only to the logo images of the R-multiverse project. Please refer to other licenses and copyright notices for all other parts of the project, such as the code and documentation.\nR-multiverse logo images copyright (c) 2024 Eli Lilly and Company, Hibiki AI Limited\nAttribution-ShareAlike 4.0 International\n=======================================================================\nCreative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\n Considerations for licensors: Our public licenses are\n intended for use by those authorized to give the public\n permission to use material in ways otherwise restricted by\n copyright and certain other rights. Our licenses are\n irrevocable. Licensors should read and understand the terms\n and conditions of the license they choose before applying it.\n Licensors should also secure all rights necessary before\n applying our licenses so that the public can reuse the\n material as expected. Licensors should clearly mark any\n material not subject to the license. This includes other CC-\n licensed material, or material used under an exception or\n limitation to copyright. More considerations for licensors:\nwiki.creativecommons.org/Considerations_for_licensors\n\n Considerations for the public: By using one of our public\n licenses, a licensor grants the public permission to use the\n licensed material under specified terms and conditions. If\n the licensor's permission is not necessary for any reason--for\n example, because of any applicable exception or limitation to\n copyright--then that use is not regulated by the license. Our\n licenses grant only permissions under copyright and certain\n other rights that a licensor has authority to grant. Use of\n the licensed material may still be restricted for other\n reasons, including because others have copyright or other\n rights in the material. A licensor may make special requests,\n such as asking that all changes be marked or described.\n Although not required by our licenses, you are encouraged to\n respect those requests where reasonable. More considerations\n for the public:\nwiki.creativecommons.org/Considerations_for_licensees\n=======================================================================\nCreative Commons Attribution-ShareAlike 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\n\nreproduce and Share the Licensed Material, in whole or in part; and\nproduce, reproduce, and Share Adapted Material.\n\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)\n\nnever produces Adapted Material.\n\nDownstream recipients.\n\nOffer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nAdditional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nNo downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\n\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\n\nretain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nindicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nindicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.\nTO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION, NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES, COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n=======================================================================\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
+    "text": "R-multiverse is a new initiative to establish a trustworthy, community-curated R package repository that runs on the open-source r-universe infrastructure. We strive for transparent governance, high automation, and quarterly production releases. Visit the overview page to learn more."
+  },
+  {
+    "objectID": "moderators.html",
+    "href": "moderators.html",
+    "title": "Moderators",
+    "section": "",
+    "text": "A moderator is a volunteer gatekeeper who manages contributions and discussions from contributors and users. Moderators are vital to the health and success of R-multiverse: they help the R community understand how to use R-multiverse, they ensure new package contributions are reviewed in a timely manner, they maintain the integrity of the R-multiverse package ecosystem. If you would like to help improve R-multiverse, please consider becoming a moderator. This page explains the how to become a moderator and the scope of the moderator role."
+  },
+  {
+    "objectID": "moderators.html#prerequisites",
+    "href": "moderators.html#prerequisites",
+    "title": "Moderators",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nModerators must be:\n\nProficient in R package development.\nProficient in the English language.\nAble to manage content on GitHub such as repositories, pull requests, issues, and discussions.\nPrepared to facilitate the process to contribute packages to R-multiverse.\nPrepared to facilitate discussions and answer questions on the r-multiverse/help issue and discussion forums.\nFamiliar with all R-multiverse policies.\nPrepared to assist with the enforcement of R-multiverse policies (see the “Policy Enforcement” section below)."
+  },
+  {
+    "objectID": "moderators.html#selection",
+    "href": "moderators.html#selection",
+    "title": "Moderators",
+    "section": "Selection",
+    "text": "Selection\nAdministrators are responsible for selecting moderators. Beyond the prerequisites above, administrators choose moderators based on trust. A moderator should have a positive, strong, visible, verifiable presence in the R community. If you would like to be a moderator, please help R-multiverse stakeholders understand who you are and what you work on. There are countless ways to grow your public reputation, and each individual moderator has their own unique type of impact.\nHere is just a small list of examples:\n\nContribute packages to well-known repositories (or R-multiverse).\nContribute or review for rOpenSci.\nOrganize or speak at an R-focused conference. Examples include but are not limited to the list at r-project.org, posit::conf, LatinR, and R/Pharma.\nOrganize a chapter of R-Ladies.\nCurate R Weekly.\nContribute to an R Consortium ISC working group.\nContribute to a professional organization such as an ASA group or openstatsware.\nOrganize an R user group. (Meetup and Jumping Rivers list examples.)\nPublish R-focused articles in journals such as the R Journal, the Journal of Statistical Software, or the Journal of Open Source Software."
+  },
+  {
+    "objectID": "moderators.html#volunteering",
+    "href": "moderators.html#volunteering",
+    "title": "Moderators",
+    "section": "Volunteering",
+    "text": "Volunteering\nIf you would like to volunteer as a moderator, please fill out the email template below and send it to administrators@r-multiverse.org with the subject line “Joining as Moderator”. Each occurrence of ___ in the template below is a placeholder for a response from you. All the other text can remain exactly as shown below, with no modification.\nTo the R-multiverse Administrators:\n\nI would like to join R-multiverse as a moderator. Please find my responses below.\n\n* Full name: ___\n* Pronouns (examples: they/them, she/her, he/him): ___\n* Professional affiliation, if applicable: ___\n* GitHub user name: ___\n* Links to R packages I have authored or contributed to, if any: ___\n* Links that point to my online presence (for example, personal websites, social media profile pages, project websites, Shiny apps, presentations, and/or software reviews (e.g. for rOpenSci or the Journal of Open Source Software)): ___\n* Other ways, if any, that I am involved in the R community: ___\n* Number of years, if any, that I have developed or contributed to R packages: ___\n* Number of years, if any, that I have been involved in the R community: ___\n* Areas of professional subject matter expertise (or example: statistics, databases, ecology, genomics, clinical trials, etc.): ___\n* Number of hours per month I will commit to reviewing contributed packages (any number is okay): ___\n* Number of hours per month I will commit to moderating issues and discussions at https://github.com/r-multiverse/help: ___"
+  },
+  {
+    "objectID": "moderators.html#onboarding",
+    "href": "moderators.html#onboarding",
+    "title": "Moderators",
+    "section": "Onboarding",
+    "text": "Onboarding\nIf you are selected as a moderator and you agree to join, please work with an administrator to complete the onboarding process:\n\nPlease open a new issue of type “Moderator onboarding” at https://github.com/r-multiverse/help/issues to track the onboarding process.\nPlease submit a pull request the website repository to add yourself to the moderator section on the team page. Please include your full name, a description, your GitHub profile photo if available, and your professional affiliation if applicable. An administrator will review and merge the pull request.\nNext, an administrator will add you to the R-multiverse moderator GitHub team. This GitHub team has maintainer access to https://github.com/r-multiverse/contributions, triage access to https://github.com/r-multiverse/help and https://github.com/r-multiverse/topics, and read access to https://github.com/r-multiverse/moderation."
+  },
+  {
+    "objectID": "moderators.html#offboarding",
+    "href": "moderators.html#offboarding",
+    "title": "Moderators",
+    "section": "Offboarding",
+    "text": "Offboarding\nIf you no longer wish to serve as a moderator, please inform an administrator by posting a new issue of type “Moderator offboarding” at https://github.com/r-multiverse/help. The administrator will then remove you from the R-multiverse moderator GitHub team and submit a pull request to transfer you from the moderator section to the alumni section on the team page of the website."
+  },
+  {
+    "objectID": "moderators.html#reviewing-contributions",
+    "href": "moderators.html#reviewing-contributions",
+    "title": "Moderators",
+    "section": "Reviewing Contributions",
+    "text": "Reviewing Contributions\nModerators review R package contributions to R-multiverse. The contribution process is described on the website and is governed by the official R-multiverse review policy.\nThe role of a moderator is to read contributions at https://github.com/r-multiverse/contributions/pulls, merge the pull requests that comply with R-multiverse official policies, and either close the pull request (without merging) or ask for changes in non-compliant cases.\nAs a moderator, you may optionally restrict your review to packages in your area of expertise. Simply search contributions for relevant keywords, including R-multiverse topics."
+  },
+  {
+    "objectID": "moderators.html#maintaining-contributions",
+    "href": "moderators.html#maintaining-contributions",
+    "title": "Moderators",
+    "section": "Maintaining Contributions",
+    "text": "Maintaining Contributions\nModerators stay involved and engaged even after contributed packages are accepted. For example, a community member may report name conflicts between R-multiverse and CRAN. In that case, a moderator should contact the maintainers of the respective packages and work together toward a solution which is agreeable to the maintainers and which ensures the compatibility between R-multiverse and CRAN where possible. If you have trouble, please ask an administrator for help."
+  },
+  {
+    "objectID": "moderators.html#removing-contributions",
+    "href": "moderators.html#removing-contributions",
+    "title": "Moderators",
+    "section": "Removing Contributions",
+    "text": "Removing Contributions\nIt may become necessary to remove packages from R-multiverse, either because of policy violations or at the request of the maintainers. To remove a package, edit the text in its contribution listing file: replace the URL/JSON with free-form text that explains why the package was removed. For example:\nThis package was removed from R-multiverse because the latest release had \"LICENSE: TBD\" in the DESCRIPTION file, which is not a valid FOSS license. R-multiverse requires a valid FOSS license to ensure the copyrights of the authors are protected (see https://r-multiverse.org/aup.html#intellectual-property and https://r-multiverse.org/aup.html#enforcement-and-reporting-violations).\nThe Community repository will then automatically detect the unstructured text and remove the package. Unless the package name itself violates R-multiverse policies, please do not delete the contribution listing file. 1\nIn an emergency that requires the immediate removal of a package, please also manually delete the Community packages.json file and Staging packages.json file."
+  },
+  {
+    "objectID": "moderators.html#topics",
+    "href": "moderators.html#topics",
+    "title": "Moderators",
+    "section": "Topics",
+    "text": "Topics\nWe encourage moderators to contribute R-multiverse topics about their fields of expertise. To do so, submit a pull request to https://github.com/r-multiverse/topics to add a text file describing the subject matter (example here).2 A bot periodically rebuilds the website based on these text files. Seasoned contributors will see your topic listed here and add keywords to their contributions accordingly."
+  },
+  {
+    "objectID": "moderators.html#discussions",
+    "href": "moderators.html#discussions",
+    "title": "Moderators",
+    "section": "Discussions",
+    "text": "Discussions\nModerators help answer questions on the r-multiverse/help issue and discussion forums. Questions may ask about specific packages, package reviews, the workings of R-multiverse, etc. A moderator may close an issue or discussion thread if it originally came from a contributor or user and the original issue is resolved. Moderators should not close issues or discussions created by administrators, including official proposals to modify R-multiverse policies."
+  },
+  {
+    "objectID": "moderators.html#enforcement",
+    "href": "moderators.html#enforcement",
+    "title": "Moderators",
+    "section": "Enforcement",
+    "text": "Enforcement\nAdministrators take primary responsibility for enforcing all R-multiverse policies. Moderators are delegated the following limited-scope privileges and responsibilities to assist administrators with enforcement.\n\nBlocking users\nAttackers and may attempt to spam or sabotage R-multiverse infrastructure. Examples include but are not limited to:\n\nContributing malware with a clear intent to cause harm.\nPosting repetitive comments, unsolicited advertisements, or inappropriate material at https://github.com/r-multiverse/help or https://github.com/r-multiverse/contributions/pulls.\nOverwhelming https://github.com/r-multiverse/contributions/pulls with spam pull requests.\n\nPlease quickly add malicious GitHub users to the blocked users list at https://github.com/organizations/r-multiverse/settings/blocked_users. This will impede ongoing attacks by blocking the users from the R-multiverse GitHub organization.\n\n\nRemoving packages from Community\nModerators are responsible for removing R packages from https://github.com/r-multiverse/contributions which contain malware, invalid licenses3, or otherwise violate acceptable use. To remove a package, please follow the instructions from the “Removing Contributions” section above.\n\n\nRepairing other damage\nAfter blocking a malicious user, please delete any comments or contributed package listings which cause harm or constitute spam.\n\n\nReporting to R-multiverse\nPlease report all known policy violations to the issue tracker in the private repository at https://github.com/r-multiverse/moderation. An administrator will respond and work with you on a resolution. After resolving the issue, the administrator will publicly notify all R-multiverse stakeholders in a new issue thread at https://github.com/r-multiverse/help. The public thread will not disclose the identities of any victims of the incident or any moderators involved in its resolution.\n\n\nReporting to GitHub/GitLab\nA violation of R-multiverse policies may also violate GitHub policies or GitLab policies: for example, a malicious user or a package with malware. If that is the case, please immediately report the user and/or package using GitHub’s “Report abuse or spam” webform or GitLab’s “Report abuse” procedure.\n\n\nReporting to the R Consortium Advisory Database\nIf a package contains malware or exploitable vulnerabilities, please report the affected package versions to the R Consortium Advisory Database.\n\n\nOut of scope\nModerators should not attempt to directly confront malicious users/contributors, resolve code of conduct violations, or engage with legal matters relating to policy violations. Administrator directly handle these and similar cases. Please post to https://github.com/r-multiverse/moderation/issues to notify an administrator."
+  },
+  {
+    "objectID": "moderators.html#footnotes",
+    "href": "moderators.html#footnotes",
+    "title": "Moderators",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIn this case, the contribution listing file serves as a placeholder in case a contributor wants to reuse the same name for a different package.↩︎\nThrough triage access, R-multiverse moderators are authorized to merge these pull requests. Please only edit the plain files without file extensions. All the HTML files are automatically generated.↩︎\nnonstandard_licenses.json is a continuously updating list of packages with non-standard licenses.↩︎"
   },
   {
     "objectID": "review.html",
@@ -539,11 +630,18 @@
     "text": "Moderators\n\n\n\n\n SHIMA Tatsuya \n\n\n\nSHIMA Tatsuya is a developer with expertise in integrating R with Rust. He is one of the maintainers for the Rocker project, and a core developer of the polars R package."
   },
   {
+    "objectID": "team.html#alumni",
+    "href": "team.html#alumni",
+    "title": "Team",
+    "section": "Alumni",
+    "text": "Alumni"
+  },
+  {
     "objectID": "team.html#roles",
     "href": "team.html#roles",
     "title": "Team",
     "section": "Roles",
-    "text": "Roles\n\nAdministrators build the team, develop the infrastructure, and write the policies that govern R-multiverse.\nModerators review package contributions according to the package review policy, and they moderate issues and discussions raised in the r-multiverse/help repository and other forums on R-multiverse."
+    "text": "Roles\n\nAdministrators build the team, develop the infrastructure, and write the policies that govern R-multiverse.\nModerators review package contributions according to the package review policy, and they moderate issues and discussions raised in the r-multiverse/help repository and other forums on R-multiverse (see documentation for moderators)."
   },
   {
     "objectID": "team.html#support",
@@ -586,6 +684,13 @@
     "title": "Overview",
     "section": "Infrastructure",
     "text": "Infrastructure\nR-multiverse is powered by R-universe, GitHub Actions, and the public source code repositories in the R-multiverse GitHub organization."
+  },
+  {
+    "objectID": "overview.html#how-you-can-help",
+    "href": "overview.html#how-you-can-help",
+    "title": "Overview",
+    "section": "How you can help",
+    "text": "How you can help\n\nSpread the word: share R-multiverse with your colleagues.\nContribute your packages to R-multiverse.\nVolunteer to become a moderator."
   },
   {
     "objectID": "overview.html#support",
