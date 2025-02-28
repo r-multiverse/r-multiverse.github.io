@@ -18,7 +18,7 @@
     "href": "production.html#checks",
     "title": "Production repository",
     "section": "Checks",
-    "text": "Checks\nTo reach Production, a package release must pass the following R-multiverse checks:\n\nR CMD check must pass (no errors or warnings) on Mac (R-release), Windows (R-release), Linux (R-devel).\nThe release must not have an active security advisory.\nThe DESCRIPTION file must not have a Remotes: field.\nThe current version number must be greater than the version numbers of past releases of the same package.\nThe release must not strongly depend (Depends:, Imports:, LinkingTo:) on an R-multiverse package with any any of the above issues. 2"
+    "text": "Checks\nTo reach Production, a package release must comply with all R-multiverse policies, and it must pass the following automated checks:\n\nLegal\n\nThe package must have a free and open-source license.\n\n\n\nSecurity\n\nThe release must not have an active security advisory.\n\n\n\nQuality\n\nR CMD check must pass in the Staging universe (no errors or warnings) on Mac (R-release), Windows (R-release), Linux (R-devel).\n\n\n\nDocumentation\n\nThe version number of the current release must be strictly greater than the version numbers of all previous releases of the package.\nIf the package is on both CRAN and R-multiverse, the CRAN version number must not be higher than the R-multiverse one.\n\n\n\nDependencies\n\nThe DESCRIPTION file must not include a Remotes: field.\nThe package must not strongly depend (Depends:, Imports:, LinkingTo:) on an R-multiverse package with any of the above check issues. 2"
   },
   {
     "objectID": "production.html#snapshots",
@@ -60,7 +60,7 @@
     "href": "production.html#footnotes",
     "title": "Production repository",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nThe patch version of base R may change, but the major and minor versions are held constant.↩︎\nHowever, an R-multiverse package can strongly depend a package from CRAN, regardless of CRAN check status, as long as that package remains available on CRAN.↩︎\nA package is only removed from a snapshot if it becomes absolutely necessary to do so, e.g. because of an egregious policy violation.↩︎\nAnd compatible with versions of dependencies that were on CRAN at the time of the snapshot.↩︎\nexcept in Staging when Staging is currently inactive.↩︎"
+    "text": "Footnotes\n\n\nThe patch version of base R may change, but the major and minor versions are held constant.↩︎\nAn R-multiverse package can strongly depend a package from CRAN, regardless of CRAN check status, as long as that package remains available on CRAN.↩︎\nA package is only removed from a snapshot if it becomes absolutely necessary to do so, e.g. because of an egregious policy violation.↩︎\nAnd compatible with versions of dependencies that were on CRAN at the time of the snapshot.↩︎\nexcept in Staging when Staging is currently inactive.↩︎"
   },
   {
     "objectID": "terms.html",

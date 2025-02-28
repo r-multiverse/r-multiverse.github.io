@@ -248,14 +248,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="checks" class="level2">
 <h2 class="anchored" data-anchor-id="checks">Checks</h2>
-<p>To reach Production, a package release must pass the following R-multiverse checks:</p>
-<ol type="1">
-<li><code>R CMD check</code> must pass (no errors or warnings) on Mac (R-release), Windows (R-release), Linux (R-devel).</li>
+<p>To reach Production, a package release must comply with all R-multiverse <a href="./policies.html">policies</a>, and it must pass the following automated checks:</p>
+<section id="legal" class="level4">
+<h4 class="anchored" data-anchor-id="legal">Legal</h4>
+<ul>
+<li>The package must have a <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source license</a>.</li>
+</ul>
+</section>
+<section id="security" class="level4">
+<h4 class="anchored" data-anchor-id="security">Security</h4>
+<ul>
 <li>The release must not have an active <a href="https://github.com/RConsortium/r-advisory-database">security advisory</a>.</li>
-<li>The <code>DESCRIPTION</code> file must not have a <code>Remotes:</code> field.</li>
-<li>The current version number must be greater than the version numbers of past releases of the same package.</li>
-<li>The release must not strongly depend (<code>Depends:</code>, <code>Imports:</code>, <code>LinkingTo:</code>) on an R-multiverse package with any any of the above issues. <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
-</ol>
+</ul>
+</section>
+<section id="quality" class="level4">
+<h4 class="anchored" data-anchor-id="quality">Quality</h4>
+<ul>
+<li><code>R CMD check</code> must pass in the <a href="https://staging.r-multiverse.org">Staging universe</a> (no errors or warnings) on Mac (R-release), Windows (R-release), Linux (R-devel).</li>
+</ul>
+</section>
+<section id="documentation" class="level4">
+<h4 class="anchored" data-anchor-id="documentation">Documentation</h4>
+<ul>
+<li>The version number of the current release must be strictly greater than the version numbers of all previous releases of the package.</li>
+<li>If the package is on both CRAN and R-multiverse, the CRAN version number must not be higher than the R-multiverse one.</li>
+</ul>
+</section>
+<section id="dependencies" class="level4">
+<h4 class="anchored" data-anchor-id="dependencies">Dependencies</h4>
+<ul>
+<li>The <code>DESCRIPTION</code> file must not include a <code>Remotes:</code> field.</li>
+<li>The package must not strongly depend (<code>Depends:</code>, <code>Imports:</code>, <code>LinkingTo:</code>) on an R-multiverse package with any of the above check issues. <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+</ul>
+</section>
 </section>
 <section id="snapshots" class="level2">
 <h2 class="anchored" data-anchor-id="snapshots">Snapshots</h2>
@@ -348,7 +373,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <ol>
 <li id="fn1"><p>The patch version of base R may change, but the major and minor versions are held constant.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>However, an R-multiverse package can strongly depend a package from CRAN, regardless of CRAN check status, as long as that package remains available on CRAN.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>An R-multiverse package can strongly depend a package from CRAN, regardless of CRAN check status, as long as that package remains available on CRAN.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>A package is only removed from a snapshot if it becomes absolutely necessary to do so, e.g.&nbsp;because of an egregious <a href="./policies.html">policy</a> violation.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>And compatible with versions of dependencies that were on CRAN at the time of the snapshot.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn5"><p>except in Staging when Staging is currently inactive.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
