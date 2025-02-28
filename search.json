@@ -11,7 +11,7 @@
     "href": "production.html#users",
     "title": "Production repository",
     "section": "Users",
-    "text": "Users\nProduction deploys in periodic snapshots throughout the year (details below). The current Production snapshot was created on 2025-02-15 when base R had version 4.4.2. All packages passed automated checks at that time. However, the same checks might not pass using a different version of R or different versions of dependencies from CRAN.\nFor the current snapshot, please use R version 4.4.2 and CRAN dependencies from 2025-02-15 to ensure compatibility. Posit Public Package Manager (p3m) can help. Example:1\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org\",\n    \"https://packagemanager.posit.co/cran/2025-02-15\"\n  )\n)"
+    "text": "Users\nProduction deploys in periodic snapshots throughout the year. Prior to each snapshot, packages are tested in a month-long Staging cycle in which healthy packages from Community, dependencies from CRAN, and the version of base R are all held constant.1\nThe current Production snapshot was deployed on 2025-02-15 after one month of testing against R version 4.4.2 and CRAN dependencies from 2025-01-15. For optimal compatibility, please use Production with R 4.4.2 and the Posit Public Package Manager (p3m) snapshot of CRAN from 2025-01-15.\ngetRversion()\n#&gt; [1] ‘4.4.2’\n\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org\",\n    \"https://packagemanager.posit.co/cran/2025-01-15\"\n  )\n)"
   },
   {
     "objectID": "production.html#checks",
@@ -32,14 +32,14 @@
     "href": "production.html#staging",
     "title": "Production repository",
     "section": "Staging",
-    "text": "Staging\nRather than pull releases directly from Community, Production draws from an intermediate repository called Staging. The Staging repository is active during the month-long period prior to each snapshot. During that time, Staging stabilizes the Production candidates while still allowing bug fixes.\nWhile Staging is active, if a package is failing one or more R-multiverse checks, then new releases of that package are continuously pulled from Community. Otherwise, Staging freezes the package at its current release and no longer accepts updates from Community. This freeze prevents new problems in reverse dependencies downstream.\nAt snapshot time, Production creates the snapshot from the subset of package releases in Staging which pass R-multiverse checks. A month after the snapshot, Staging resets (removes all its packages) so that an entirely new set of Community releases can become candidates for Production."
+    "text": "Staging\nRather than pull releases directly from Community, Production draws from an intermediate repository called Staging. The Staging repository is active during the month-long period prior to each snapshot. During that time, Staging holds constant:\n\nThe R-multiverse packages which are candidates for Production and currently pass automated checks.\nThe versions of dependency packages from CRAN.\nThe targeted version of base R. (The patch version of R may change, but the major and minor versions do not change during a Staging cycle.)\n\nWhile Staging is active, if a package is failing one or more R-multiverse checks, then new releases of that package are continuously pulled from Community. Otherwise, if the package passes checks, then Staging freezes the package at its current release version and no longer accepts updates from Community. This freeze prevents new problems in reverse dependencies downstream.\nAt snapshot time, Production creates the snapshot from the subset of package releases in Staging which pass R-multiverse checks. A month after the snapshot, Staging resets (removes all its packages) so that an entirely new set of Community releases can become candidates for Production."
   },
   {
     "objectID": "production.html#schedule",
     "href": "production.html#schedule",
     "title": "Production repository",
     "section": "Schedule",
-    "text": "Schedule\nEvery year, Staging and Production follow a schedule given by the dates below.\n\n\n\nQuarter\nStaging resets\nStaging becomes active\nProduction snapshot\n\n\n\n\nQ1\nDecember 15\nJanuary 15\nFebruary 15\n\n\nQ2\nMarch 15\nApril 15\nMay 15\n\n\nQ3\nJune 15\nJuly 15\nAugust 15\n\n\nQ4\nSeptember 15\nOctober 15\nNovember 15"
+    "text": "Schedule\nEvery year, Staging and Production follow a schedule given by the dates below.\n\n\n\nQuarter\nStaging resets\nStaging becomes active\nProduction snapshot\n\n\n\n\nQ1\nJanuary 15\nFebruary 15\nMarch 15\n\n\nQ2\nApril 15\nMay 15\nJune 15\n\n\nQ3\nJuly 15\nAugust 15\nSeptember 15\n\n\nQ4\nOctober 15\nNovember 15\nDecember 15"
   },
   {
     "objectID": "production.html#status",
@@ -60,7 +60,7 @@
     "href": "production.html#footnotes",
     "title": "Production repository",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nCaveat: when setting two URLs in the repos argument, the same package may be in both repositories, and the highest version is always preferred.↩︎\nHowever, an R-multiverse package can strongly depend a package from CRAN, regardless of CRAN check status, as long as that package remains available on CRAN.↩︎\nA package is only removed from a snapshot if it becomes absolutely necessary to do so, e.g. because of an egregious policy violation.↩︎\nAnd compatible with versions of dependencies that were on CRAN at the time of the snapshot.↩︎\nexcept in Staging when Staging is currently inactive.↩︎"
+    "text": "Footnotes\n\n\nThe patch version of base R may change, but the major and minor versions are held constant.↩︎\nHowever, an R-multiverse package can strongly depend a package from CRAN, regardless of CRAN check status, as long as that package remains available on CRAN.↩︎\nA package is only removed from a snapshot if it becomes absolutely necessary to do so, e.g. because of an egregious policy violation.↩︎\nAnd compatible with versions of dependencies that were on CRAN at the time of the snapshot.↩︎\nexcept in Staging when Staging is currently inactive.↩︎"
   },
   {
     "objectID": "terms.html",
@@ -669,7 +669,7 @@
     "href": "overview.html#installing-packages",
     "title": "Overview",
     "section": "Installing packages",
-    "text": "Installing packages\nEach R-multiverse repository has a URL for the repos argument of install.packages(). For example, to install polars from Community: 1\ninstall.packages(\n  \"polars\",\n  repos = c(\"https://community.r-multiverse.org\", getOption(\"repos\"))\n)\nand from Production:\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org\",\n    \"https://packagemanager.posit.co/cran/2025-02-15\"\n  )\n)\nProduction is deployed in snapshots, and it works best with compatible versions of base R and dependency packages. For details, please visit the page on using Production."
+    "text": "Installing packages\nEach R-multiverse repository has a URL for the repos argument of install.packages(). For example, to install polars from Community: 1\ninstall.packages(\n  \"polars\",\n  repos = c(\"https://community.r-multiverse.org\", getOption(\"repos\"))\n)\nThe current Production snapshot was deployed on 2025-02-15 after one month of testing against R version 4.4.2 and CRAN dependencies from 2025-01-15. For optimal compatibility, please use Production with R 4.4.2 and the Posit Public Package Manager (p3m) snapshot of CRAN from 2025-01-15:\ngetRversion()\n#&gt; [1] ‘4.4.2’\n\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org\",\n    \"https://packagemanager.posit.co/cran/2025-01-15\"\n  )\n)\nProduction is deployed in snapshots, and it works best with compatible versions of base R and dependency packages. For details, please visit the page on using Production."
   },
   {
     "objectID": "overview.html#other-repositories",

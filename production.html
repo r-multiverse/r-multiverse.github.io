@@ -233,15 +233,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The Production repository comprises a subset of <a href="./community.html">Community</a> package releases which are mutually compatible and meet a high standard of quality.</p>
 <section id="users" class="level2">
 <h2 class="anchored" data-anchor-id="users">Users</h2>
-<p>Production deploys in periodic snapshots throughout the year (details below). The current Production snapshot was created on 2025-02-15 when base R had version 4.4.2. All packages passed automated checks at that time. However, the same checks might not pass using a different version of R or different versions of dependencies from <a href="https://cran.r-project.org/">CRAN</a>.</p>
-<p>For the current snapshot, please use R version 4.4.2 and <a href="https://cran.r-project.org/">CRAN</a> dependencies from 2025-02-15 to ensure compatibility. <a href="https://packagemanager.posit.co">Posit Public Package Manager (p3m)</a> can help. Example:<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"polars"</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://production.r-multiverse.org"</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://packagemanager.posit.co/cran/2025-02-15"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Production deploys in <a href="#schedule">periodic snapshots throughout the year</a>. Prior to each snapshot, packages are tested in a month-long <a href="#staging">Staging</a> cycle in which healthy packages from <a href="./community.html">Community</a>, dependencies from <a href="https://cran.r-project.org/">CRAN</a>, and the version of base R are all held constant.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>The current Production snapshot was deployed on 2025-02-15 after <a href="#staging">one month of testing</a> against R version 4.4.2 and <a href="https://cran.r-project.org/">CRAN</a> dependencies from 2025-01-15. For optimal compatibility, please use <a href="./production.html">Production</a> with R 4.4.2 and the <a href="https://packagemanager.posit.co">Posit Public Package Manager (p3m)</a> snapshot of CRAN from 2025-01-15.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getRversion</span>()</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] ‘4.4.2’</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"polars"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://production.r-multiverse.org"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://packagemanager.posit.co/cran/2025-01-15"</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="checks" class="level2">
 <h2 class="anchored" data-anchor-id="checks">Checks</h2>
@@ -260,8 +263,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="staging" class="level2">
 <h2 class="anchored" data-anchor-id="staging">Staging</h2>
-<p>Rather than pull releases directly from <a href="./community.html">Community</a>, Production draws from an intermediate repository called <a href="#staging">Staging</a>. The <a href="#staging">Staging</a> repository is active during the month-long period prior to each snapshot. During that time, <a href="#staging">Staging</a> stabilizes the Production candidates while still allowing bug fixes.</p>
-<p>While <a href="#staging">Staging</a> is active, if a package is failing one or more <a href="#checks">R-multiverse checks</a>, then new releases of that package are continuously pulled from <a href="./community.html">Community</a>. Otherwise, <a href="#staging">Staging</a> freezes the package at its current release and no longer accepts updates from <a href="./community.html">Community</a>. This freeze prevents new problems in reverse dependencies downstream.</p>
+<p>Rather than pull releases directly from <a href="./community.html">Community</a>, Production draws from an intermediate repository called <a href="#staging">Staging</a>. The <a href="#staging">Staging</a> repository is active during the month-long period prior to each snapshot. During that time, <a href="#staging">Staging</a> holds constant:</p>
+<ol type="1">
+<li>The R-multiverse packages which are candidates for Production and currently pass automated checks.</li>
+<li>The versions of dependency packages from CRAN.</li>
+<li>The targeted version of base R. (The patch version of R may change, but the major and minor versions do not change during a <a href="#staging">Staging</a> cycle.)</li>
+</ol>
+<p>While <a href="#staging">Staging</a> is active, if a package is failing one or more <a href="#checks">R-multiverse checks</a>, then new releases of that package are continuously pulled from <a href="./community.html">Community</a>. Otherwise, if the package passes <a href="#checks">checks</a>, then <a href="#staging">Staging</a> freezes the package at its current release version and no longer accepts updates from <a href="./community.html">Community</a>. This freeze prevents new problems in reverse dependencies downstream.</p>
 <p>At snapshot time, Production creates the snapshot from the subset of package releases in <a href="#staging">Staging</a> which pass <a href="#checks">R-multiverse checks</a>. A month after the snapshot, <a href="#staging">Staging</a> resets (removes all its packages) so that an entirely new set of <a href="./community.html">Community</a> releases can become candidates for Production.</p>
 </section>
 <section id="schedule" class="level2">
@@ -279,27 +287,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td>Q1</td>
-<td>December 15</td>
 <td>January 15</td>
 <td>February 15</td>
+<td>March 15</td>
 </tr>
 <tr class="even">
 <td>Q2</td>
-<td>March 15</td>
 <td>April 15</td>
 <td>May 15</td>
+<td>June 15</td>
 </tr>
 <tr class="odd">
 <td>Q3</td>
-<td>June 15</td>
 <td>July 15</td>
 <td>August 15</td>
+<td>September 15</td>
 </tr>
 <tr class="even">
 <td>Q4</td>
-<td>September 15</td>
 <td>October 15</td>
 <td>November 15</td>
+<td>December 15</td>
 </tr>
 </tbody>
 </table>
@@ -339,7 +347,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>Caveat: when setting two URLs in the repos argument, the same package may be in both repositories, and the highest version is always preferred.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>The patch version of base R may change, but the major and minor versions are held constant.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>However, an R-multiverse package can strongly depend a package from CRAN, regardless of CRAN check status, as long as that package remains available on CRAN.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>A package is only removed from a snapshot if it becomes absolutely necessary to do so, e.g.&nbsp;because of an egregious <a href="./policies.html">policy</a> violation.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>And compatible with versions of dependencies that were on CRAN at the time of the snapshot.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
