@@ -16,16 +16,30 @@ website:
     logo: "logo/logo-hexbin.png"
     logo-alt: "R-multiverse"
     left:
-    - overview.qmd
-    - text: "Repositories"
+    - text: About
+      menu:
+        - text: Overview
+          url: overview.qmd
+        - text: Team
+          url: team.md
+    - text: Repositories
       menu:
         - text: Community
           url: community.md
         - text: Production
           url: production.qmd
-    - contributors.md
-    - moderators.md
-    - team.md
+    - text: Packages
+      menu:
+        - text: Status
+          url: https://r-multiverse.org/status
+        - text: Topics
+          url: https://r-multiverse.org/topics
+    - text: Guidance
+      menu:
+        - text: Community
+          url: contributors.md
+        - text: Moderators
+          url: moderators.md
     - policies.md
     tools:
       - icon: github
