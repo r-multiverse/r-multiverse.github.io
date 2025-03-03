@@ -45,7 +45,8 @@ Here is just a small list of examples:
 
 ## Volunteering
 
-If you would like to volunteer as a [moderator](governance.md#moderator), please fill out the email template below and send it to `administrators@r-multiverse.org` with the subject line "Joining as Moderator".
+If you would like to volunteer as a [moderator](governance.md#moderator),
+please fill out the email template below and send it to the [Administrators](governance.md#administrator) at `administrators@r-multiverse.org` with the subject line "Joining as Moderator".
 Each occurrence of `___` in the template below is a placeholder for a response from you.
 All the other text can remain exactly as shown below, with no modification.
 
@@ -192,3 +193,4 @@ Please post to <https://github.com/r-multiverse/moderation/issues> to notify an 
 If you have questions, please post a [discussion thread](https://github.com/r-multiverse/help/discussions).
 To communicate confidentially among the [administrators](team.md#administrators) and other [moderators](team.md#moderators), please post a new issue, discussion, or comment to the private repository at <https://github.com/r-multiverse/moderation>.
 If you need to communicate confidentially with only the administrators, please email `administrators@r-multiverse.org`.
+To confidentially report a [code of conduct](conduct.md) issue, please email the Code of Conduct Committee at `conduct@r-multiverse.org`.
