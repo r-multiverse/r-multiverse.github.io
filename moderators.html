@@ -97,10 +97,21 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./overview.html"> 
-<span class="menu-text">Overview</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-about">    
+        <li>
+    <a class="dropdown-item" href="./overview.html">
+ <span class="dropdown-text">Overview</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./team.html">
+ <span class="dropdown-text">Team</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-repositories" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Repositories</span>
@@ -116,18 +127,36 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./contributors.html"> 
-<span class="menu-text">Contributors</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-packages" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Packages</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-packages">    
+        <li>
+    <a class="dropdown-item" href="https://r-multiverse.org/status">
+ <span class="dropdown-text">Status</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./moderators.html" aria-current="page"> 
-<span class="menu-text">Moderators</span></a>
+        <li>
+    <a class="dropdown-item" href="https://r-multiverse.org/topics">
+ <span class="dropdown-text">Topics</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./team.html"> 
-<span class="menu-text">Team</span></a>
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-guidance" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Guidance</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-guidance">    
+        <li>
+    <a class="dropdown-item" href="./contributors.html">
+ <span class="dropdown-text">Community</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./moderators.html">
+ <span class="dropdown-text">Moderators</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./policies.html"> 
 <span class="menu-text">Policies</span></a>
