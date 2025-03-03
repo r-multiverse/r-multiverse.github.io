@@ -51,7 +51,7 @@ To reach Production, a package release must comply with all R-multiverse [polici
 
 #### Quality
 
-* `R CMD build` and `R CMD check` must pass in the [Staging universe](https://staging.r-multiverse.org) (no errors or warnings) on Mac (R-release), Windows (R-release), Linux (R-devel).
+* `R CMD build` and `R CMD check` must pass in the [Staging universe](https://staging.r-multiverse.org) (no errors or warnings) on Mac, Windows, and Linux. These checks use the versions of base R and CRAN packages from the first day of the current [Staging cycle](production.qmd#staging).
 
 #### Documentation
 
