@@ -63,9 +63,8 @@ that the package maintainer
 ## Production
 
 R-multiverse updates the [Production](production.qmd) repository in quarterly snapshots.
-As part of this process, an intermediate Staging repository hosts
-packages and performs checks.
-Visit [this page](production.qmd) to learn more about [Production](production.qmd).
+The [Production status page](https://r-multiverse.org/status/production.html) list the packages successfully staged for the next Production snapshot. 
+Visit the [Production documentation](production.qmd) to learn how the process works.
 
 ## Status
 
