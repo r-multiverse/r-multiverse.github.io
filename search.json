@@ -683,7 +683,7 @@
     "href": "overview.html#infrastructure",
     "title": "Overview",
     "section": "Infrastructure",
-    "text": "Infrastructure\nAll R-multiverse source code is public and open-source. The code is licensed under MIT, and the logo has a Creative Commons Attribution-ShareAlike 4.0 International license. R-multiverse leverages R-universe, GitHub Actions, and Cloudflare. Cloudflare manages the r-multiverse.org domain and hosts Production snapshots in an R2 bucket."
+    "text": "Infrastructure\nAll R-multiverse source code is public and open-source. The code is licensed under MIT, and the logo has a Creative Commons Attribution-ShareAlike 4.0 International license. R-multiverse leverages R-universe, GitHub Actions, and Cloudflare. Cloudflare provides the r-multiverse.org domain and hosts Production snapshots in an R2 bucket."
   },
   {
     "objectID": "overview.html#how-you-can-help",
