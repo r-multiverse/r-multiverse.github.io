@@ -8,28 +8,23 @@ source("R/utils.R")
 
 The Production repository comprises a subset of [Community](community.md) package releases
 which are mutually compatible and meet a high standard of quality.
+R-multiverse deploys Production in [periodic snapshots throughout the year](#schedule).
+Prior to each snapshot, packages undergo a [Staging](#staging) process that gradually freezes release candidates and their dependencies.
 
 ## Users
 
-Production deploys in [periodic snapshots throughout the year](#schedule).
-Prior to each snapshot, packages are tested in a month-long [Staging](#staging) cycle
-in which healthy packages from [Community](community.md), dependencies from [CRAN](https://cran.r-project.org/),
-and the version of base R are all held constant.^[The patch version of base  R may change, but the major and minor versions are held constant.]
-
-The current Production snapshot was deployed on `r snapshot_date()` after [one month of testing](#staging) against R version `r snapshot_r()` and [CRAN](https://cran.r-project.org/) dependencies from `r staging_date()`.
-For optimal compatibility, please use [Production](production.qmd) with R `r snapshot_r()` and the [Posit Public Package Manager (p3m)](https://packagemanager.posit.co) snapshot of CRAN from `r staging_date()`.
-
+The current Production snapshot was deployed on `r snapshot()$snapshot`.
+It was tested with the base R `r snapshot()$r` and [CRAN](https://cran.r-project.org/) packages from the [dependency freeze](#staging) on `r snapshot()$dependency_freeze`.
+Please use the `r snapshot()$dependency_freeze` CRAN snapshot from [Posit Public Package Manager (p3m)](https://packagemanager.posit.co) to install dependencies:
 
 ```{r, eval = TRUE, echo = FALSE, results = "asis"}
 text <- c(
   "```r",
-  "getRversion()",
-  sprintf("#> [1] ‘%s’\n", snapshot_r()),
   "install.packages(",
   "  \"polars\",",
   "  repos = c(",
   "    \"https://production.r-multiverse.org\",",
-  sprintf("    \"https://packagemanager.posit.co/cran/%s\"", staging_date()),
+  sprintf("    \"https://packagemanager.posit.co/cran/%s\"", snapshot()$dependency_freeze),
   "  )",
   ")",
   "```"
@@ -37,9 +32,64 @@ text <- c(
 cat(text, sep = "\n")
 ```
 
+## Staging
+
+R-multiverse publishes a Production snapshot every 3 months.
+Staging is the gradual process that builds these snapshots.
+The goal of Staging is to ensure that packages and their dependencies are fully functional and mutually compatible in Production.
+Similar to the [Debian release cycle](https://release.debian.org), a [special Staging repository](https://staging.r-multiverse.org) slowly transforms a collection of unstable [Community](community.md) releases into a stable ecosystem of packages in Production.
+
+Staging happens in cycles.
+There are four cycles per year, and each cycle lasts three months.
+Each month is a distinct phase that gradually hardens the packages that will enter the snapshot.
+
+### Month 1: dependency freeze
+
+Here, the [Staging repository](https://staging.r-multiverse.org) freezes the versions of base R^[Patch versions of base R can still update. For example, if the targeted base R version is 4.4, [checks](#checks) may enforce R 4.4.0, 4.4.1, 4.4.2, or 4.4.3.] and packages from [CRAN](https://cran.r-project.org)^[R-multiverse uses the [Posit Public Package Manager](https://packagemanager.posit.co/) snapshot of [CRAN](https://cran.r-project.org) from month 1 day 1.].
+For the purpose of running and enforcing [checks](#checks), these versions of dependencies do not change until after the snapshot is finalized on month 3 day 1.
+New [Community](community.md) package releases freely enter and leave the [Staging repository](https://staging.r-multiverse.org).
+This process gives packages, contributors, and the [Staging repository](https://staging.r-multiverse.org) itself an entire month to adjust to a fixed and predictable set of dependencies.
+
+### Month 2: candidate freeze
+
+Beginning on month 2, newly registered packages can no longer enter the [Staging repository](https://staging.r-multiverse.org).
+If a [Staging repository](https://staging.r-multiverse.org) package passes [checks](#checks) at least once during month 2, it immediately becomes staged.
+When a package becomes staged, its version freezes, and it can no longer upgrade in the [Staging repository](https://staging.r-multiverse.org) until the next 3-month cycle.
+A package can only upgrade in [Staging](https://staging.r-multiverse.org) if:
+
+1. It is not already staged, and
+2. Its [checks](#checks) are failing.
+
+Staged packages appear on the [Production status page](https://r-multiverse.org/status/production.html) and are guaranteed admittance into the next snapshot.
+If a package is already staged but its [checks](#checks) fail later in month 2, then the package is still staged and will still enter the upcoming snapshot.
+
+### Month 3: production snapshot
+
+The Production snapshot finalizes on day 1 of month 3.^[The `install.packages()` URL may be reachable before the snapshot date, but the contents are not finalized until the actual day of the snapshot.]
+Production does not add, remove, or update packages at any other time.
+^[A package is only removed from a snapshot if it becomes absolutely necessary to do so,
+e.g. because of an egregious [policy](policies.md) violation.]
+The snapshot consists of all staged packages from month 2.
+For the rest of month 3, the [Staging repository](https://staging.r-multiverse.org) does not change, and [R-multiverse administrators](team.md#administrators) have time to fix any rare and unexpected problems that may arise during the Staging process.
+
+Packages in the [Staging repository](https://staging.r-multiverse.org) repository do not change for the entire month.
+This gives the [R-multiverse administrators](team.md#administrators) time to fix rare and unexpected problems that may arise during the Staging process.
+
+## Schedule
+
+[Staging](#staging) follows the same schedule each year.
+Each month-long phase of [Staging](#staging) starts on the 15th of the month.
+
+| Quarter | Dependency freeze begins | Candidate freeze begins | Production snapshot finalizes |
+|---|---|---|---|
+| Q1 | January 15 | February 15 | March 15 |
+| Q2 | April 15 | May 15 | June 15 |
+| Q3 | July 15 | August 15 | September 15 |
+| Q4 | October 15 | November 15 | December 15 |
+
 ## Checks
 
-To reach Production, a package release must comply with all R-multiverse [policies](policies.md), and it must pass the following automated checks:
+To reach Production, a package release must comply with all R-multiverse [policies](policies.md), and it must pass the following automated checks in the [Staging repository](#staging):
 
 #### Legal
 
@@ -64,99 +114,18 @@ To reach Production, a package release must comply with all R-multiverse [polici
 * The package must not strongly depend (`Depends:`, `Imports:`, `LinkingTo:`) on an R-multiverse package with any of the above check issues.
 ^[An R-multiverse package can strongly depend a package from CRAN, regardless of CRAN check status, as long as that package remains available on CRAN.]
 
-## Snapshots
-
-Once every 3 months, Production updates all its packages simultaneously and deploys a snapshot.
-Production does not add, remove, or update packages at any other time.
-^[A package is only removed from a snapshot if it becomes absolutely necessary to do so,
-e.g. because of an egregious [policy](policies.md) violation.]
-Packages change slowly in Production, but they are mutually compatible.
-^[And compatible with versions of dependencies that were on CRAN at the time of the snapshot.]
-
-## Staging
-
-Rather than pull releases directly from [Community](community.md),
-Production draws from an intermediate repository called [Staging](#staging).
-The [Staging](#staging) repository is active during the month-long period prior to each snapshot.
-During that time, [Staging](#staging) holds constant:
-
-1. The R-multiverse packages which are candidates for Production and currently pass automated checks.
-1. The versions of dependency packages from CRAN.
-1. The targeted version of base R. (The patch version of R may change, but the major and minor versions do not change during a [Staging](#staging) cycle.)
-
-While [Staging](#staging) is active, if a package is failing one or more [R-multiverse checks](#checks),
-then new releases of that package are continuously pulled from [Community](community.md).
-Otherwise, if the package passes [checks](#checks), then [Staging](#staging) freezes the package at its current release version and no longer accepts updates from [Community](community.md).
-This freeze prevents new problems in reverse dependencies downstream.
-
-At snapshot time, Production creates the snapshot from the subset of package releases in
-[Staging](#staging) which pass [R-multiverse checks](#checks).
-A month after the snapshot, [Staging](#staging) resets (removes all its packages)
-so that an entirely new set of [Community](community.md) releases can become candidates for Production.
-
-## Schedule
-
-Every year, [Staging](#staging) and Production follow a schedule given by the dates below.
-
-| Quarter | [Staging](#staging) resets | [Staging](#staging) becomes active | Production snapshot |
-|---|---|---|---|
-| Q1 | January 15 | February 15 | March 15 |
-| Q2 | April 15 | May 15 | June 15 |
-| Q3 | July 15 | August 15 | September 15 |
-| Q4 | October 15 | November 15 | December 15 |
-
 ## Status
 
-R-multiverse has a [status system](https://r-multiverse.org/status/index.html) to broadcast the latest [R-multiverse check results](#checks) of each package.
-In each of [Community](community.md) and [Staging](#staging), there is an HTML page for every package.
-Example:
+R-multiverse continuously updates a [website](https://r-multiverse.org/status/index.html) to report status and [check](#checks).
+The [Production status page](https://r-multiverse.org/status/production.html) lists all the packages staged for the next snapshot.
+[Separate pages](https://r-multiverse.org/status/staging.html) list all the packages with [check](#checks) issues in each of [Community](community.md) and [Staging](#staging).
+In addition, each package has its own individual [status page](https://r-multiverse.org/status/staging/polars.html) and [RSS feed](https://r-multiverse.org/status/staging/polars.xml).
 
-* <https://r-multiverse.org/status/community/polars.html>
-* <https://r-multiverse.org/status/staging/polars.html>
+## Archive
 
-In addition, each package has an RSS feed that updates on each new package release to each repository:^[except in Staging when Staging is currently inactive.]
+The following table lists all past and present Production snapshots.
+It includes the start date of each phase of [Staging](#staging), the compatible version of base R, and the URLs for the `repos` argument of `install.packages()`.
 
-* <https://r-multiverse.org/status/community/polars.xml>
-* <https://r-multiverse.org/status/staging/polars.xml>
-
-## Debugging
-
-`R CMD check` errors in [Staging](#staging)
-may be difficult to diagnose. 
-For example, [Staging](#staging) might have different versions
-of dependencies than you have on your local machine.
-
-The [`packages.json`](https://github.com/r-multiverse/staging/blob/main/packages.json)
-file has all the Git commit hashes
-of all the versions of packages in [Staging](#staging).
-If you can identify the specific
-dependency that is causing problems, you can install the version in [Staging](#staging)
-and reproduce the issue locally.
-For example, if [`packages.json`](https://github.com/r-multiverse/staging/blob/main/packages.json)
-lists a dependency:
-
-```json
-  {
-    "package": "polars",
-    "url": "https://github.com/pola-rs/r-polars",
-    "branch": "a76b8d56e6f39a6157880069f9d32f3cc1f574d7"
-  },
+```{r, echo = FALSE}
+gt::gt(archive())
 ```
-
-then you can install the version of that dependency from R:
-
-```r
-pak::pkg_install("pola-rs/r-polars@a76b8d56e6f39a6157880069f9d32f3cc1f574d7")
-```
-
-then restart R and run the following to reproduce the issue:
-
-```r
-devtools::check("yourPackage")
-```
-
-Alternatively, you can create your own personal [universe](https://r-universe.dev),
-give it a strategic subset of dependencies from
-[`packages.json`](https://github.com/r-multiverse/staging/blob/main/packages.json),
-and omit the `"branch"` field from your package so the checks run on every commit.
-Visit <https://ropensci.org/r-universe/> to learn more about using R-universe directly.

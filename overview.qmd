@@ -39,28 +39,25 @@ install.packages(
 )
 ```
 
-The current [Production](production.qmd) snapshot was deployed on `r snapshot_date()` after [one month of testing](production.qmd#staging) against R version `r snapshot_r()` and [CRAN](https://cran.r-project.org/) dependencies from `r staging_date()`.
-For optimal compatibility, please use [Production](production.qmd) with R `r snapshot_r()` and the [Posit Public Package Manager (p3m)](https://packagemanager.posit.co) snapshot of CRAN from `r staging_date()`:
+[Production](production.qmd) is deployed in periodic snapshots throughout the year.
+The current Production snapshot was deployed on `r snapshot()$snapshot`.
+It was tested with the base R `r snapshot()$r` and [CRAN](https://cran.r-project.org/) packages from the [dependency freeze](#staging) on `r snapshot()$dependency_freeze`.
+Please use the `r snapshot()$dependency_freeze` CRAN snapshot from [Posit Public Package Manager (p3m)](https://packagemanager.posit.co) to install dependencies:
 
 ```{r, eval = TRUE, echo = FALSE, results = "asis"}
 text <- c(
   "```r",
-  "getRversion()",
-  sprintf("#> [1] ‘%s’\n", snapshot_r()),
   "install.packages(",
   "  \"polars\",",
   "  repos = c(",
   "    \"https://production.r-multiverse.org\",",
-  sprintf("    \"https://packagemanager.posit.co/cran/%s\"", staging_date()),
+  sprintf("    \"https://packagemanager.posit.co/cran/%s\"", snapshot()$dependency_freeze),
   "  )",
   ")",
   "```"
 )
 cat(text, sep = "\n")
 ```
-
-[Production](production.qmd) is deployed in snapshots, and it works best with compatible versions of base R and dependency packages.
-For details, please visit the [page on using Production](production.qmd#users).
 
 ## Other repositories
 
