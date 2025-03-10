@@ -683,7 +683,7 @@
     "href": "overview.html#infrastructure",
     "title": "Overview",
     "section": "Infrastructure",
-    "text": "Infrastructure\nR-multiverse is powered by R-universe, GitHub Actions, and the public source code repositories in the R-multiverse GitHub organization."
+    "text": "Infrastructure\nAll R-multiverse source code is public and open-source, and most of it is released under the MIT license. R-multiverse is powered by R-universe, GitHub Actions, and Cloudflare. Cloudflare manages the r-multiverse.org domain and hosts Production snapshots in an R2 bucket."
   },
   {
     "objectID": "overview.html#how-you-can-help",
