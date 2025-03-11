@@ -205,7 +205,13 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#reviewing-contributions" id="toc-reviewing-contributions" class="nav-link" data-scroll-target="#reviewing-contributions">Reviewing Contributions</a></li>
   <li><a href="#maintaining-contributions" id="toc-maintaining-contributions" class="nav-link" data-scroll-target="#maintaining-contributions">Maintaining Contributions</a></li>
-  <li><a href="#removing-contributions" id="toc-removing-contributions" class="nav-link" data-scroll-target="#removing-contributions">Removing Contributions</a></li>
+  <li><a href="#removing-contributions" id="toc-removing-contributions" class="nav-link" data-scroll-target="#removing-contributions">Removing Contributions</a>
+  <ul class="collapse">
+  <li><a href="#removing-registration" id="toc-removing-registration" class="nav-link" data-scroll-target="#removing-registration">Removing registration</a></li>
+  <li><a href="#removing-from-the-community-repository" id="toc-removing-from-the-community-repository" class="nav-link" data-scroll-target="#removing-from-the-community-repository">Removing from the Community repository</a></li>
+  <li><a href="#removing-from-the-staging-repository" id="toc-removing-from-the-staging-repository" class="nav-link" data-scroll-target="#removing-from-the-staging-repository">Removing from the Staging repository</a></li>
+  <li><a href="#removing-from-production-snapshots" id="toc-removing-from-production-snapshots" class="nav-link" data-scroll-target="#removing-from-production-snapshots">Removing from Production snapshots</a></li>
+  </ul></li>
   <li><a href="#topics" id="toc-topics" class="nav-link" data-scroll-target="#topics">Topics</a></li>
   <li><a href="#discussions" id="toc-discussions" class="nav-link" data-scroll-target="#discussions">Discussions</a></li>
   <li><a href="#enforcement" id="toc-enforcement" class="nav-link" data-scroll-target="#enforcement">Enforcement</a>
@@ -327,10 +333,31 @@ I would like to join R-multiverse as a moderator. Please find my responses below
 </section>
 <section id="removing-contributions" class="level2">
 <h2 class="anchored" data-anchor-id="removing-contributions">Removing Contributions</h2>
-<p>It may become necessary to remove packages from R-multiverse, either because of <a href="./policies.html">policy</a> violations or at the request of the maintainers. To remove a package, edit the text in its <a href="https://github.com/r-multiverse/contributions/tree/main/packages">contribution listing file</a>: replace the URL/JSON with free-form text that explains why the package was removed. For example:</p>
-<pre><code>This package was removed from R-multiverse because the latest release had "LICENSE: TBD" in the DESCRIPTION file, which is not a valid FOSS license. R-multiverse requires a valid FOSS license to ensure the copyrights of the authors are protected (see https://r-multiverse.org/aup.html#intellectual-property and https://r-multiverse.org/aup.html#enforcement-and-reporting-violations).</code></pre>
-<p>The <a href="https://github.com/r-multiverse/community">Community repository</a> will then automatically detect the unstructured text and remove the package. Unless the package name itself violates R-multiverse <a href="./policies.html">policies</a>, please do not delete the <a href="https://github.com/r-multiverse/contributions/tree/main/packages">contribution listing file</a>. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<p>In an emergency that requires the immediate removal of a package, please also manually delete the <a href="https://github.com/r-multiverse/community/blob/main/packages.json">Community <code>packages.json</code> file</a> and <a href="https://github.com/r-multiverse/staging/blob/main/packages.json">Staging <code>packages.json</code> file</a>.</p>
+<p>It may become necessary to remove packages from R-multiverse, either because of <a href="./policies.html">policy</a> violations or at the request of the maintainers. A package exists at several levels in R-multiverse, and it is complicated to manually remove a package. If needed, please follow the steps below to remove a package.</p>
+<section id="removing-registration" class="level3">
+<h3 class="anchored" data-anchor-id="removing-registration">Removing registration</h3>
+<p>To remove a package’s registration, edit the text in its <a href="https://github.com/r-multiverse/contributions/tree/main/packages">contribution listing file</a>: replace the URL/JSON with free-form text that explains why the package was removed. For example:</p>
+<pre><code>This package was removed from R-multiverse because the latest release had
+"LICENSE: TBD" in the DESCRIPTION file, which is not a valid FOSS license.
+R-multiverse requires a valid FOSS license to ensure the copyrights of the
+authors are protected
+(see https://r-multiverse.org/aup.html#intellectual-property and
+https://r-multiverse.org/aup.html#enforcement-and-reporting-violations).</code></pre>
+</section>
+<section id="removing-from-the-community-repository" class="level3">
+<h3 class="anchored" data-anchor-id="removing-from-the-community-repository">Removing from the Community repository</h3>
+<p>If a package’s registration is removed as above, then an automated process will remove the package from the <a href="https://github.com/r-multiverse/community">Community repository</a> without further intervention. Unless the package name itself violates R-multiverse <a href="./policies.html">policies</a>, please do not delete the <a href="https://github.com/r-multiverse/contributions/tree/main/packages">contribution listing file</a>. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>In an emergency that requires the immediate removal of a package, please also manually delete the package’s list entry in the <a href="https://github.com/r-multiverse/community/blob/main/packages.json">Community <code>packages.json</code> file</a>.</p>
+</section>
+<section id="removing-from-the-staging-repository" class="level3">
+<h3 class="anchored" data-anchor-id="removing-from-the-staging-repository">Removing from the Staging repository</h3>
+<p>It is important to keep the <a href="https://github.com/r-multiverse/staging">Staging repository</a> as stable as possible in order to produce reliable <a href="./production.html">Production snapshots</a>. Please only remove a package from the <a href="https://github.com/r-multiverse/staging">Staging repository</a> if it is absolutely necessary, i.e.&nbsp;a <a href="./policies.html">policy</a> violation.</p>
+<p>To remove a package from the <a href="https://github.com/r-multiverse/staging">Staging repository</a> repository, please submit a pull request to delete the package’s list entry in the <a href="https://github.com/r-multiverse/staging/blob/main/packages.json">Staging <code>packages.json</code> file</a>. An <a href="./team.html#administrator">administrator</a> will review and approve as soon as possible.</p>
+</section>
+<section id="removing-from-production-snapshots" class="level3">
+<h3 class="anchored" data-anchor-id="removing-from-production-snapshots">Removing from Production snapshots</h3>
+<p>Production snapshots are meant to be permanent, and packages are removed only if absolutely necessary, i.e.&nbsp;a <a href="./policies.html">policy</a> violation. If a package must be removed from one or more Production snapshots, please contact an <a href="./team.html#administrator">administrator</a>, either through the <a href="https://github.com/r-multiverse/moderation">moderator issue tracker</a> or <code>administrators@r-multiverse.org</code>. The <a href="./team.html#administrator">administrator</a> will manually remove the package from the <a href="https://developers.cloudflare.com/r2/">Cloudflare R2</a> bucket that hosts the snapshots.</p>
+</section>
 </section>
 <section id="topics" class="level2">
 <h2 class="anchored" data-anchor-id="topics">Topics</h2>
