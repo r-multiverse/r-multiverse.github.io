@@ -46,7 +46,7 @@
     "href": "production.html#archive",
     "title": "Production repository",
     "section": "Archive",
-    "text": "Archive\nThe following table lists all past and present Production snapshots. It includes the start date of each phase of Staging, the compatible version of base R, and the URLs for the repos argument of install.packages().\n\n\n\n\n\n\n\n\ndependency_freeze\ncandidate_freeze\nsnapshot\nr\ncran\nr_multiverse\n\n\n\n\n2025-01-15\n2025-02-15\n2025-03-15\n4.4\nhttps://packagemanager.posit.co/cran/2025-01-15\nhttps://production.r-multiverse.org/2025-03-15"
+    "text": "Archive\nThe following table lists all past and present Production snapshots. It includes the start date of each phase of Staging and the compatible version of base R. The URLs for the repos argument of install.packages() can be inferred from the dates below.\n\n\n\n\n\n\n\n\nr\ndependency_freeze\ncandidate_freeze\nsnapshot\n\n\n\n\n4.4\n2025-01-15\n2025-02-15\n2025-03-15"
   },
   {
     "objectID": "production.html#footnotes",
