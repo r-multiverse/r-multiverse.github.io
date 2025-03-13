@@ -536,7 +536,7 @@
     "href": "moderators.html#topics",
     "title": "Moderators",
     "section": "Topics",
-    "text": "Topics\nWe encourage moderators to contribute R-multiverse topics about their fields of expertise. To do so, submit a pull request to https://github.com/r-multiverse/topics to add a topic listing file to describe the subject matter (example here). A bot periodically rebuilds the website from the listings. Seasoned contributors will see your topic listed here and add searchable keywords to their contributions accordingly."
+    "text": "Topics\nWe encourage moderators to contribute R-multiverse topics about their fields of expertise. To do so, submit a pull request to add a topic listing file that describes the subject matter (example here). A scheduled job periodically rebuilds the website from the listings. Seasoned contributors will see your topic listed here and add searchable keywords to their contributions accordingly."
   },
   {
     "objectID": "moderators.html#discussions",
