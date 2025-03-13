@@ -438,7 +438,7 @@
     "href": "contributors.html#topics",
     "title": "Contributors",
     "section": "Topics",
-    "text": "Topics\nR-multiverse has a “topics” system for organizing packages into subject matter areas. Each topic has a page that lists the packages in its area (example). To contribute a package to a topic, simply list the topic URL in the DESCRIPTION file (example). and then create a new GitHub/GitLab release. A bot periodically scans Community and updates the list of packages in each topic.\nTo contribute a topic, submit a pull request to https://github.com/r-multiverse/topics to add a new text file (with no file extension) whose name is the topic name and whose contents describe the topic. The bot generates HTML pages from these text files."
+    "text": "Topics\nR-multiverse has a “topics” system for organizing packages into subject matter areas. Each topic has a page that lists the packages in its area (example). To contribute a package to a topic, simply list the topic URL in the DESCRIPTION file (example). and then create a new GitHub/GitLab release. A bot periodically scans Community and updates the list of packages in each topic.\nTo contribute a topic, submit a pull request to https://github.com/r-multiverse/topics to add a new topic listing file. The name of the file is the topic name, and the contents describe the topic."
   },
   {
     "objectID": "contributors.html#badges",
