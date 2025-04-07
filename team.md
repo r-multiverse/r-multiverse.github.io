@@ -25,23 +25,6 @@ He is a co-creator of R-multiverse and the author of packages [`targets`](https:
 :::
 
 ::: {.row}
-### Charlie Gao
-:::: {.columns}
-::: {.column width=20%}
-<a href="https://github.com/shikokuchuo" target="_blank">
-  <img src="https://github.com/shikokuchuo.png" class="img-fluid rounded-circle">
-</a>
-:::
-::: {.column width=10%}
-:::
-::: {.column width=70%}
-Charlie Gao is director of Hibiki AI and a co-creator of R-multiverse.
-He is the creator of the [mirai](https://github.com/shikokuchuo/mirai) async framework for R and co-organizer of the [CambRidge](https://www.meetup.com/cambridge-r-user-group/) R user group.
-:::
-::::
-:::
-
-::: {.row}
 ### Jeroen Ooms
 :::: {.columns}
 ::: {.column width=20%}
@@ -71,6 +54,24 @@ He is the maintainer of many R packages including [curl](https://github.com/jero
 ::: {.column width=70%}
 Maëlle is a research software engineer, part-time with rOpenSci, notably maintaining its [Packages: Development, Maintenance, and Peer Review](https://devguide.ropensci.org/) guide.
 She also created the [R-hub blog](https://blog.r-hub.io/) and co-wrote the online book [HTTP testing in R](https://books.ropensci.org/http-testing/).
+:::
+::::
+:::
+
+
+::: {.row}
+### Charlie Gao
+:::: {.columns}
+::: {.column width=20%}
+<a href="https://github.com/shikokuchuo" target="_blank">
+  <img src="https://github.com/shikokuchuo.png" class="img-fluid rounded-circle">
+</a>
+:::
+::: {.column width=10%}
+:::
+::: {.column width=70%}
+Charlie Gao is a software engineer in Posit's open source team.
+He is the creator of the [mirai](https://github.com/shikokuchuo/mirai) async framework, and works on high-concurrency, high-performance infrastructure and tooling for the R ecosystem.
 :::
 ::::
 :::
