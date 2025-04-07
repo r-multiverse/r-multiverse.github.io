@@ -71,7 +71,7 @@ She also created the [R-hub blog](https://blog.r-hub.io/) and co-wrote the onlin
 :::
 ::: {.column width=70%}
 Charlie Gao is a software engineer in Posit's open source team.
-He is the creator of the [mirai](https://github.com/shikokuchuo/mirai) async framework, and works on high-concurrency, high-performance infrastructure and tooling for the R ecosystem.
+He is the creator of the [mirai](https://github.com/r-lib/mirai) async framework, and works on high-concurrency, high-performance infrastructure and tooling for the R ecosystem.
 :::
 ::::
 :::
