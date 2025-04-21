@@ -266,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The Production repository comprises a subset of <a href="./community.html">Community</a> package releases which are mutually compatible and meet a high standard of quality. R-multiverse deploys Production in <a href="#schedule">periodic snapshots throughout the year</a>. Prior to each snapshot, packages undergo a <a href="#staging">Staging</a> process that gradually freezes release candidates and their dependencies.</p>
 <section id="users" class="level2">
 <h2 class="anchored" data-anchor-id="users">Users</h2>
-<p>The current Production snapshot was deployed on 2025-03-15. It was tested with the base R 4.4 and <a href="https://cran.r-project.org/">CRAN</a> packages from the <a href="#staging">dependency freeze</a> on 2025-01-15. Please use the 2025-01-15 CRAN snapshot from <a href="https://packagemanager.posit.co">Posit Public Package Manager (p3m)</a> to install dependencies:</p>
+<p>The current Production snapshot was deployed on 2025-03-15. It includes package sources, Mac OS binaries, and Windows binaries.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The snapshot was tested with the base R 4.4 and <a href="https://cran.r-project.org/">CRAN</a> packages from the <a href="#staging">dependency freeze</a> on 2025-01-15. Please use the 2025-01-15 CRAN snapshot from <a href="https://packagemanager.posit.co">Posit Public Package Manager (p3m)</a> to install dependencies:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"polars"</span>,</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
@@ -281,7 +281,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Staging happens in cycles. There are four cycles per year, and each cycle lasts three months. Each month is a distinct phase that gradually hardens the packages that will enter the snapshot.</p>
 <section id="month-1-dependency-freeze" class="level3">
 <h3 class="anchored" data-anchor-id="month-1-dependency-freeze">Month 1: dependency freeze</h3>
-<p>Here, the <a href="https://staging.r-multiverse.org">Staging repository</a> freezes the versions of base R<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and packages from <a href="https://cran.r-project.org">CRAN</a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. For the purpose of running and enforcing <a href="#checks">checks</a>, these versions of dependencies do not change until after the snapshot is finalized on month 3 day 1. New <a href="./community.html">Community</a> package releases freely enter and leave the <a href="https://staging.r-multiverse.org">Staging repository</a>. This process gives packages, contributors, and the <a href="https://staging.r-multiverse.org">Staging repository</a> itself an entire month to adjust to a fixed and predictable set of dependencies.</p>
+<p>Here, the <a href="https://staging.r-multiverse.org">Staging repository</a> freezes the versions of base R<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and packages from <a href="https://cran.r-project.org">CRAN</a><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. For the purpose of running and enforcing <a href="#checks">checks</a>, these versions of dependencies do not change until after the snapshot is finalized on month 3 day 1. New <a href="./community.html">Community</a> package releases freely enter and leave the <a href="https://staging.r-multiverse.org">Staging repository</a>. This process gives packages, contributors, and the <a href="https://staging.r-multiverse.org">Staging repository</a> itself an entire month to adjust to a fixed and predictable set of dependencies.</p>
 </section>
 <section id="month-2-candidate-freeze" class="level3">
 <h3 class="anchored" data-anchor-id="month-2-candidate-freeze">Month 2: candidate freeze</h3>
@@ -294,7 +294,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="month-3-production-snapshot" class="level3">
 <h3 class="anchored" data-anchor-id="month-3-production-snapshot">Month 3: production snapshot</h3>
-<p>The Production snapshot finalizes on day 1 of month 3.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Production does not add, remove, or update packages at any other time. <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> The snapshot consists of all staged packages from month 2. For the rest of month 3, the <a href="https://staging.r-multiverse.org">Staging repository</a> does not change, and <a href="./team.html#administrators">R-multiverse administrators</a> have time to fix any rare and unexpected problems that may arise during the Staging process.</p>
+<p>The Production snapshot finalizes on day 1 of month 3.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> Production does not add, remove, or update packages at any other time. <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> The snapshot consists of all staged packages from month 2. For the rest of month 3, the <a href="https://staging.r-multiverse.org">Staging repository</a> does not change, and <a href="./team.html#administrators">R-multiverse administrators</a> have time to fix any rare and unexpected problems that may arise during the Staging process.</p>
 <p>Packages in the <a href="https://staging.r-multiverse.org">Staging repository</a> repository do not change for the entire month. This gives the <a href="./team.html#administrators">R-multiverse administrators</a> time to fix rare and unexpected problems that may arise during the Staging process.</p>
 </section>
 </section>
@@ -376,7 +376,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h4 class="anchored" data-anchor-id="dependencies">Dependencies</h4>
 <ul>
 <li>The <code>DESCRIPTION</code> file must not include a <code>Remotes:</code> field.</li>
-<li>The package must not strongly depend (<code>Depends:</code>, <code>Imports:</code>, <code>LinkingTo:</code>) on an R-multiverse package with any of the above check issues. <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></li>
+<li>The package must not strongly depend (<code>Depends:</code>, <code>Imports:</code>, <code>LinkingTo:</code>) on an R-multiverse package with any of the above check issues. <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></li>
 </ul>
 </section>
 </section>
@@ -386,26 +386,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="archive" class="level2">
 <h2 class="anchored" data-anchor-id="archive">Archive</h2>
-<p>The following table lists all past and present Production snapshots, with more recent snapshots listed higher. It includes the start date of each phase of <a href="#staging">Staging</a> and the compatible version of base R. The URLs for the <code>repos</code> argument of <code>install.packages()</code> can be inferred from the dates below.</p>
+<p>The following table lists all past and present Production snapshots, with more recent snapshots listed higher. Snapshots over a year old do not have binaries. It includes the start date of each phase of <a href="#staging">Staging</a> and the compatible version of base R. The URLs for the <code>repos</code> argument of <code>install.packages()</code> can be inferred from the dates below.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="ykvqtmzupp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ykvqtmzupp table {
+<div id="vucgnhyaru" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vucgnhyaru table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ykvqtmzupp thead, #ykvqtmzupp tbody, #ykvqtmzupp tfoot, #ykvqtmzupp tr, #ykvqtmzupp td, #ykvqtmzupp th {
+#vucgnhyaru thead, #vucgnhyaru tbody, #vucgnhyaru tfoot, #vucgnhyaru tr, #vucgnhyaru td, #vucgnhyaru th {
   border-style: none;
 }
 
-#ykvqtmzupp p {
+#vucgnhyaru p {
   margin: 0;
   padding: 0;
 }
 
-#ykvqtmzupp .gt_table {
+#vucgnhyaru .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -431,12 +431,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#ykvqtmzupp .gt_caption {
+#vucgnhyaru .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ykvqtmzupp .gt_title {
+#vucgnhyaru .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -448,7 +448,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#ykvqtmzupp .gt_subtitle {
+#vucgnhyaru .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -460,7 +460,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#ykvqtmzupp .gt_heading {
+#vucgnhyaru .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -472,13 +472,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ykvqtmzupp .gt_bottom_border {
+#vucgnhyaru .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ykvqtmzupp .gt_col_headings {
+#vucgnhyaru .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -493,7 +493,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ykvqtmzupp .gt_col_heading {
+#vucgnhyaru .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -513,7 +513,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ykvqtmzupp .gt_column_spanner_outer {
+#vucgnhyaru .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -525,15 +525,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#ykvqtmzupp .gt_column_spanner_outer:first-child {
+#vucgnhyaru .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ykvqtmzupp .gt_column_spanner_outer:last-child {
+#vucgnhyaru .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ykvqtmzupp .gt_column_spanner {
+#vucgnhyaru .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -545,11 +545,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#ykvqtmzupp .gt_spanner_row {
+#vucgnhyaru .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ykvqtmzupp .gt_group_heading {
+#vucgnhyaru .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -575,7 +575,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#ykvqtmzupp .gt_empty_group_heading {
+#vucgnhyaru .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -590,15 +590,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#ykvqtmzupp .gt_from_md > :first-child {
+#vucgnhyaru .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ykvqtmzupp .gt_from_md > :last-child {
+#vucgnhyaru .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ykvqtmzupp .gt_row {
+#vucgnhyaru .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -617,7 +617,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ykvqtmzupp .gt_stub {
+#vucgnhyaru .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -630,7 +630,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ykvqtmzupp .gt_stub_row_group {
+#vucgnhyaru .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -644,15 +644,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#ykvqtmzupp .gt_row_group_first td {
+#vucgnhyaru .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ykvqtmzupp .gt_row_group_first th {
+#vucgnhyaru .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ykvqtmzupp .gt_summary_row {
+#vucgnhyaru .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -662,16 +662,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ykvqtmzupp .gt_first_summary_row {
+#vucgnhyaru .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ykvqtmzupp .gt_first_summary_row.thick {
+#vucgnhyaru .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ykvqtmzupp .gt_last_summary_row {
+#vucgnhyaru .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -681,7 +681,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ykvqtmzupp .gt_grand_summary_row {
+#vucgnhyaru .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -691,7 +691,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ykvqtmzupp .gt_first_grand_summary_row {
+#vucgnhyaru .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -701,7 +701,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#ykvqtmzupp .gt_last_grand_summary_row_top {
+#vucgnhyaru .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -711,11 +711,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ykvqtmzupp .gt_striped {
+#vucgnhyaru .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ykvqtmzupp .gt_table_body {
+#vucgnhyaru .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -724,7 +724,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ykvqtmzupp .gt_footnotes {
+#vucgnhyaru .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -738,7 +738,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ykvqtmzupp .gt_footnote {
+#vucgnhyaru .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -747,7 +747,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ykvqtmzupp .gt_sourcenotes {
+#vucgnhyaru .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -761,7 +761,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ykvqtmzupp .gt_sourcenote {
+#vucgnhyaru .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -769,72 +769,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ykvqtmzupp .gt_left {
+#vucgnhyaru .gt_left {
   text-align: left;
 }
 
-#ykvqtmzupp .gt_center {
+#vucgnhyaru .gt_center {
   text-align: center;
 }
 
-#ykvqtmzupp .gt_right {
+#vucgnhyaru .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ykvqtmzupp .gt_font_normal {
+#vucgnhyaru .gt_font_normal {
   font-weight: normal;
 }
 
-#ykvqtmzupp .gt_font_bold {
+#vucgnhyaru .gt_font_bold {
   font-weight: bold;
 }
 
-#ykvqtmzupp .gt_font_italic {
+#vucgnhyaru .gt_font_italic {
   font-style: italic;
 }
 
-#ykvqtmzupp .gt_super {
+#vucgnhyaru .gt_super {
   font-size: 65%;
 }
 
-#ykvqtmzupp .gt_footnote_marks {
+#vucgnhyaru .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ykvqtmzupp .gt_asterisk {
+#vucgnhyaru .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ykvqtmzupp .gt_indent_1 {
+#vucgnhyaru .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ykvqtmzupp .gt_indent_2 {
+#vucgnhyaru .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ykvqtmzupp .gt_indent_3 {
+#vucgnhyaru .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ykvqtmzupp .gt_indent_4 {
+#vucgnhyaru .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ykvqtmzupp .gt_indent_5 {
+#vucgnhyaru .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ykvqtmzupp .katex-display {
+#vucgnhyaru .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ykvqtmzupp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vucgnhyaru div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -875,11 +875,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>Patch versions of base R can still update. For example, if the targeted base R version is 4.4, <a href="#checks">checks</a> may enforce R 4.4.0, 4.4.1, 4.4.2, or 4.4.3.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>R-multiverse uses the <a href="https://packagemanager.posit.co/">Posit Public Package Manager</a> snapshot of <a href="https://cran.r-project.org">CRAN</a> from month 1 day 1.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>The <code>install.packages()</code> URL may be reachable before the snapshot date, but the contents are not finalized until the actual day of the snapshot.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>A package is only removed from a snapshot if it becomes absolutely necessary to do so, e.g.&nbsp;because of an egregious <a href="./policies.html">policy</a> violation.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p>An R-multiverse package can strongly depend a package from CRAN, regardless of CRAN check status, as long as that package remains available on CRAN.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Binaries over a year old are automatically removed.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Patch versions of base R can still update. For example, if the targeted base R version is 4.4, <a href="#checks">checks</a> may enforce R 4.4.0, 4.4.1, 4.4.2, or 4.4.3.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>R-multiverse uses the <a href="https://packagemanager.posit.co/">Posit Public Package Manager</a> snapshot of <a href="https://cran.r-project.org">CRAN</a> from month 1 day 1.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The <code>install.packages()</code> URL may be reachable before the snapshot date, but the contents are not finalized until the actual day of the snapshot.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>A package is only removed from a snapshot if it becomes absolutely necessary to do so, e.g.&nbsp;because of an egregious <a href="./policies.html">policy</a> violation.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>An R-multiverse package can strongly depend a package from CRAN, regardless of CRAN check status, as long as that package remains available on CRAN.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
