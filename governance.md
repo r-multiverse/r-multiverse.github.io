@@ -59,6 +59,11 @@ Administrators have write access to all code repositories under the [`r-multiver
 They have the right to create Proposals, cast votes on all Proposals on community-related decisions, the right to appoint Moderators, and the right to change the composition of the RMC itself.
 The RMC as a whole is the entity that controls the project, and is responsible for the continued shaping of this governance document and other policies, including the Review Policy and Code of Conduct.
 
+### Code of Conduct Committee Member
+
+The Code of Conduct Committee is responsible for receiving and managing reports of unacceptable community behavior.
+Code of Conduct Committee members review complaints, investigate them promptly and fairly, and follow the enforcement guidelines outlined in the [Code of Conduct](conduct.md).
+
 ## Project Management and Collaboration
 
 The R-multiverse project is managed through a collaborative, consensus-based approach.
