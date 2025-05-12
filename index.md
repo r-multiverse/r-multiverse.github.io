@@ -20,6 +20,6 @@ about:
 <br>
 <br>
 
-R-multiverse is a new initiative to establish a trustworthy community-curated dual repository for R packages, powered by open-source [R-universe](https://r-universe.dev) infrastructure.
+R-multiverse is a new community-curated dual repository for R packages, powered by open-source [R-universe](https://r-universe.dev) infrastructure.
 We strive for [transparent governance](policies.md), high automation, and quarterly production releases. 
 Visit the [overview page](overview.qmd) to learn more.

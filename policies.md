@@ -2,8 +2,7 @@
 title: "Policies"
 ---
 
-The following policies govern all aspects of R-multiverse,
-including but not limited to administration, acceptable use, and security.
+The following policies govern all aspects of R-multiverse.
 
 * [Governance](governance.md)
 * [Security](security.md)
