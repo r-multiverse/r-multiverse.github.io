@@ -348,7 +348,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="checks" class="level2">
 <h2 class="anchored" data-anchor-id="checks">Checks</h2>
-<p>To reach Production, a package release must comply with all R-multiverse <a href="./policies.html">policies</a>, and it must pass the following automated checks in the <a href="#staging">Staging repository</a>:</p>
+<p>To reach Production, a package release must comply with all R-multiverse <a href="./policies.html">policies</a>. In addition, it must pass the following list of automated checks in the <a href="#staging">Staging repository</a> at least once during the <a href="#candidate-freeze">candidate freeze</a>:</p>
 <section id="legal" class="level4">
 <h4 class="anchored" data-anchor-id="legal">Legal</h4>
 <ul>
@@ -378,7 +378,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h4 class="anchored" data-anchor-id="dependencies">Dependencies</h4>
 <ul>
 <li>The <code>DESCRIPTION</code> file must not include a <code>Remotes:</code> field.</li>
-<li>The package must not strongly depend (<code>Depends:</code>, <code>Imports:</code>, <code>LinkingTo:</code>) on an R-multiverse package with any of the above check issues. <a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></li>
+<li>All strong dependencies<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> from R-multiverse must also qualify<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> for Production. <a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></li>
 </ul>
 </section>
 </section>
@@ -391,23 +391,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The following table lists all past and present Production snapshots, with more recent snapshots listed higher. Snapshots over a year old do not have binaries. The table includes the start date of each phase of <a href="#staging">Staging</a> and the compatible version of base R. The URLs for the <code>repos</code> argument of <code>install.packages()</code> can be inferred from the dates below.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="urabdqyrtz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#urabdqyrtz table {
+<div id="khsugshpbo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#khsugshpbo table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#urabdqyrtz thead, #urabdqyrtz tbody, #urabdqyrtz tfoot, #urabdqyrtz tr, #urabdqyrtz td, #urabdqyrtz th {
+#khsugshpbo thead, #khsugshpbo tbody, #khsugshpbo tfoot, #khsugshpbo tr, #khsugshpbo td, #khsugshpbo th {
   border-style: none;
 }
 
-#urabdqyrtz p {
+#khsugshpbo p {
   margin: 0;
   padding: 0;
 }
 
-#urabdqyrtz .gt_table {
+#khsugshpbo .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -433,12 +433,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#urabdqyrtz .gt_caption {
+#khsugshpbo .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#urabdqyrtz .gt_title {
+#khsugshpbo .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -450,7 +450,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#urabdqyrtz .gt_subtitle {
+#khsugshpbo .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -462,7 +462,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#urabdqyrtz .gt_heading {
+#khsugshpbo .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -474,13 +474,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#urabdqyrtz .gt_bottom_border {
+#khsugshpbo .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#urabdqyrtz .gt_col_headings {
+#khsugshpbo .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -495,7 +495,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#urabdqyrtz .gt_col_heading {
+#khsugshpbo .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -515,7 +515,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#urabdqyrtz .gt_column_spanner_outer {
+#khsugshpbo .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -527,15 +527,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#urabdqyrtz .gt_column_spanner_outer:first-child {
+#khsugshpbo .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#urabdqyrtz .gt_column_spanner_outer:last-child {
+#khsugshpbo .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#urabdqyrtz .gt_column_spanner {
+#khsugshpbo .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -547,11 +547,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#urabdqyrtz .gt_spanner_row {
+#khsugshpbo .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#urabdqyrtz .gt_group_heading {
+#khsugshpbo .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -577,7 +577,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#urabdqyrtz .gt_empty_group_heading {
+#khsugshpbo .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -592,15 +592,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#urabdqyrtz .gt_from_md > :first-child {
+#khsugshpbo .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#urabdqyrtz .gt_from_md > :last-child {
+#khsugshpbo .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#urabdqyrtz .gt_row {
+#khsugshpbo .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -619,7 +619,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#urabdqyrtz .gt_stub {
+#khsugshpbo .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -632,7 +632,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#urabdqyrtz .gt_stub_row_group {
+#khsugshpbo .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -646,15 +646,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#urabdqyrtz .gt_row_group_first td {
+#khsugshpbo .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#urabdqyrtz .gt_row_group_first th {
+#khsugshpbo .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#urabdqyrtz .gt_summary_row {
+#khsugshpbo .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -664,16 +664,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#urabdqyrtz .gt_first_summary_row {
+#khsugshpbo .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#urabdqyrtz .gt_first_summary_row.thick {
+#khsugshpbo .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#urabdqyrtz .gt_last_summary_row {
+#khsugshpbo .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -683,7 +683,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#urabdqyrtz .gt_grand_summary_row {
+#khsugshpbo .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -693,7 +693,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#urabdqyrtz .gt_first_grand_summary_row {
+#khsugshpbo .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -703,7 +703,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#urabdqyrtz .gt_last_grand_summary_row_top {
+#khsugshpbo .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -713,11 +713,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#urabdqyrtz .gt_striped {
+#khsugshpbo .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#urabdqyrtz .gt_table_body {
+#khsugshpbo .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -726,7 +726,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#urabdqyrtz .gt_footnotes {
+#khsugshpbo .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -740,7 +740,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#urabdqyrtz .gt_footnote {
+#khsugshpbo .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -749,7 +749,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#urabdqyrtz .gt_sourcenotes {
+#khsugshpbo .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -763,7 +763,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#urabdqyrtz .gt_sourcenote {
+#khsugshpbo .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -771,72 +771,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#urabdqyrtz .gt_left {
+#khsugshpbo .gt_left {
   text-align: left;
 }
 
-#urabdqyrtz .gt_center {
+#khsugshpbo .gt_center {
   text-align: center;
 }
 
-#urabdqyrtz .gt_right {
+#khsugshpbo .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#urabdqyrtz .gt_font_normal {
+#khsugshpbo .gt_font_normal {
   font-weight: normal;
 }
 
-#urabdqyrtz .gt_font_bold {
+#khsugshpbo .gt_font_bold {
   font-weight: bold;
 }
 
-#urabdqyrtz .gt_font_italic {
+#khsugshpbo .gt_font_italic {
   font-style: italic;
 }
 
-#urabdqyrtz .gt_super {
+#khsugshpbo .gt_super {
   font-size: 65%;
 }
 
-#urabdqyrtz .gt_footnote_marks {
+#khsugshpbo .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#urabdqyrtz .gt_asterisk {
+#khsugshpbo .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#urabdqyrtz .gt_indent_1 {
+#khsugshpbo .gt_indent_1 {
   text-indent: 5px;
 }
 
-#urabdqyrtz .gt_indent_2 {
+#khsugshpbo .gt_indent_2 {
   text-indent: 10px;
 }
 
-#urabdqyrtz .gt_indent_3 {
+#khsugshpbo .gt_indent_3 {
   text-indent: 15px;
 }
 
-#urabdqyrtz .gt_indent_4 {
+#khsugshpbo .gt_indent_4 {
   text-indent: 20px;
 }
 
-#urabdqyrtz .gt_indent_5 {
+#khsugshpbo .gt_indent_5 {
   text-indent: 25px;
 }
 
-#urabdqyrtz .katex-display {
+#khsugshpbo .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#urabdqyrtz div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#khsugshpbo div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -883,7 +883,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li id="fn4"><p>R-multiverse uses the <a href="https://packagemanager.posit.co/">Posit Public Package Manager (p3m)</a> version of <a href="https://cran.r-project.org">CRAN</a> from month 1 day 1. <code>p3m</code> might not have a physical snapshot from that precise day, but it provides a usable <code>install.packages()</code> URL. The physical snapshot might come from an earlier day. <a href="https://p3m.dev/__api__/repos/cran/transaction-dates" class="uri">https://p3m.dev/__api__/repos/cran/transaction-dates</a> lists the physical snapshots.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn5"><p>The <code>install.packages()</code> URL may be reachable before the snapshot date, but the contents are not finalized until the actual day of the snapshot.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn6"><p>A package is only removed from a snapshot if it becomes absolutely necessary to do so, e.g.&nbsp;because of an egregious <a href="./policies.html">policy</a> violation.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7"><p>An R-multiverse package can strongly depend a package from CRAN, regardless of CRAN check status, as long as that package remains available on CRAN.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>A strong dependency is another package listed in the <code>Depends:</code>, <code>Imports:</code>, or <code>LinkingTo:</code> field of the <code>DESCRIPTION</code> file.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>The dependency must pass at least once during the <a href="#candidate-freeze">candidate freeze</a>, but not necessarily at the same time as the downstream packages that depend on it.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>An R-multiverse package can strongly depend on a package from CRAN, regardless of CRAN check status, as long as the CRAN package exists in the Posit Public Package manager snapshot used in <a href="#staging">Staging</a>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
