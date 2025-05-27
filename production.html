@@ -348,7 +348,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="checks" class="level2">
 <h2 class="anchored" data-anchor-id="checks">Checks</h2>
-<p>To reach Production, a package release must comply with all R-multiverse <a href="./policies.html">policies</a>. In addition, it must pass the following list of automated checks in the <a href="#staging">Staging repository</a> at least once during the <a href="#candidate-freeze">candidate freeze</a>:</p>
+<p>To reach Production, a package release must comply with all R-multiverse <a href="./policies.html">policies</a>. In addition, it must pass the following list of automated checks in the <a href="#staging">Staging repository</a> at least once during the current <a href="#candidate-freeze">candidate freeze</a>:</p>
 <section id="legal" class="level4">
 <h4 class="anchored" data-anchor-id="legal">Legal</h4>
 <ul>
@@ -378,7 +378,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h4 class="anchored" data-anchor-id="dependencies">Dependencies</h4>
 <ul>
 <li>The <code>DESCRIPTION</code> file must not include a <code>Remotes:</code> field.</li>
-<li>All strong dependencies<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> from R-multiverse must also qualify<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> for Production. <a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></li>
+<li>All strong dependencies<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> from R-multiverse<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> must also qualify<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> for Production.</li>
 </ul>
 </section>
 </section>
@@ -391,23 +391,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The following table lists all past and present Production snapshots, with more recent snapshots listed higher. Snapshots over a year old do not have binaries. The table includes the start date of each phase of <a href="#staging">Staging</a> and the compatible version of base R. The URLs for the <code>repos</code> argument of <code>install.packages()</code> can be inferred from the dates below.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="khsugshpbo" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#khsugshpbo table {
+<div id="uqnafjkflq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#uqnafjkflq table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#khsugshpbo thead, #khsugshpbo tbody, #khsugshpbo tfoot, #khsugshpbo tr, #khsugshpbo td, #khsugshpbo th {
+#uqnafjkflq thead, #uqnafjkflq tbody, #uqnafjkflq tfoot, #uqnafjkflq tr, #uqnafjkflq td, #uqnafjkflq th {
   border-style: none;
 }
 
-#khsugshpbo p {
+#uqnafjkflq p {
   margin: 0;
   padding: 0;
 }
 
-#khsugshpbo .gt_table {
+#uqnafjkflq .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -433,12 +433,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#khsugshpbo .gt_caption {
+#uqnafjkflq .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#khsugshpbo .gt_title {
+#uqnafjkflq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -450,7 +450,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#khsugshpbo .gt_subtitle {
+#uqnafjkflq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -462,7 +462,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#khsugshpbo .gt_heading {
+#uqnafjkflq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -474,13 +474,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#khsugshpbo .gt_bottom_border {
+#uqnafjkflq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#khsugshpbo .gt_col_headings {
+#uqnafjkflq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -495,7 +495,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#khsugshpbo .gt_col_heading {
+#uqnafjkflq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -515,7 +515,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#khsugshpbo .gt_column_spanner_outer {
+#uqnafjkflq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -527,15 +527,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#khsugshpbo .gt_column_spanner_outer:first-child {
+#uqnafjkflq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#khsugshpbo .gt_column_spanner_outer:last-child {
+#uqnafjkflq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#khsugshpbo .gt_column_spanner {
+#uqnafjkflq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -547,11 +547,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#khsugshpbo .gt_spanner_row {
+#uqnafjkflq .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#khsugshpbo .gt_group_heading {
+#uqnafjkflq .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -577,7 +577,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#khsugshpbo .gt_empty_group_heading {
+#uqnafjkflq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -592,15 +592,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#khsugshpbo .gt_from_md > :first-child {
+#uqnafjkflq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#khsugshpbo .gt_from_md > :last-child {
+#uqnafjkflq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#khsugshpbo .gt_row {
+#uqnafjkflq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -619,7 +619,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#khsugshpbo .gt_stub {
+#uqnafjkflq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -632,7 +632,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#khsugshpbo .gt_stub_row_group {
+#uqnafjkflq .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -646,15 +646,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#khsugshpbo .gt_row_group_first td {
+#uqnafjkflq .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#khsugshpbo .gt_row_group_first th {
+#uqnafjkflq .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#khsugshpbo .gt_summary_row {
+#uqnafjkflq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -664,16 +664,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#khsugshpbo .gt_first_summary_row {
+#uqnafjkflq .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#khsugshpbo .gt_first_summary_row.thick {
+#uqnafjkflq .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#khsugshpbo .gt_last_summary_row {
+#uqnafjkflq .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -683,7 +683,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#khsugshpbo .gt_grand_summary_row {
+#uqnafjkflq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -693,7 +693,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#khsugshpbo .gt_first_grand_summary_row {
+#uqnafjkflq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -703,7 +703,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#khsugshpbo .gt_last_grand_summary_row_top {
+#uqnafjkflq .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -713,11 +713,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#khsugshpbo .gt_striped {
+#uqnafjkflq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#khsugshpbo .gt_table_body {
+#uqnafjkflq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -726,7 +726,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#khsugshpbo .gt_footnotes {
+#uqnafjkflq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -740,7 +740,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#khsugshpbo .gt_footnote {
+#uqnafjkflq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -749,7 +749,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#khsugshpbo .gt_sourcenotes {
+#uqnafjkflq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -763,7 +763,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#khsugshpbo .gt_sourcenote {
+#uqnafjkflq .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -771,72 +771,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#khsugshpbo .gt_left {
+#uqnafjkflq .gt_left {
   text-align: left;
 }
 
-#khsugshpbo .gt_center {
+#uqnafjkflq .gt_center {
   text-align: center;
 }
 
-#khsugshpbo .gt_right {
+#uqnafjkflq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#khsugshpbo .gt_font_normal {
+#uqnafjkflq .gt_font_normal {
   font-weight: normal;
 }
 
-#khsugshpbo .gt_font_bold {
+#uqnafjkflq .gt_font_bold {
   font-weight: bold;
 }
 
-#khsugshpbo .gt_font_italic {
+#uqnafjkflq .gt_font_italic {
   font-style: italic;
 }
 
-#khsugshpbo .gt_super {
+#uqnafjkflq .gt_super {
   font-size: 65%;
 }
 
-#khsugshpbo .gt_footnote_marks {
+#uqnafjkflq .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#khsugshpbo .gt_asterisk {
+#uqnafjkflq .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#khsugshpbo .gt_indent_1 {
+#uqnafjkflq .gt_indent_1 {
   text-indent: 5px;
 }
 
-#khsugshpbo .gt_indent_2 {
+#uqnafjkflq .gt_indent_2 {
   text-indent: 10px;
 }
 
-#khsugshpbo .gt_indent_3 {
+#uqnafjkflq .gt_indent_3 {
   text-indent: 15px;
 }
 
-#khsugshpbo .gt_indent_4 {
+#uqnafjkflq .gt_indent_4 {
   text-indent: 20px;
 }
 
-#khsugshpbo .gt_indent_5 {
+#uqnafjkflq .gt_indent_5 {
   text-indent: 25px;
 }
 
-#khsugshpbo .katex-display {
+#uqnafjkflq .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#khsugshpbo div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#uqnafjkflq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -884,8 +884,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li id="fn5"><p>The <code>install.packages()</code> URL may be reachable before the snapshot date, but the contents are not finalized until the actual day of the snapshot.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn6"><p>A package is only removed from a snapshot if it becomes absolutely necessary to do so, e.g.&nbsp;because of an egregious <a href="./policies.html">policy</a> violation.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7"><p>A strong dependency is another package listed in the <code>Depends:</code>, <code>Imports:</code>, or <code>LinkingTo:</code> field of the <code>DESCRIPTION</code> file.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8"><p>The dependency must pass at least once during the <a href="#candidate-freeze">candidate freeze</a>, but not necessarily at the same time as the downstream packages that depend on it.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>An R-multiverse package can strongly depend on a package from CRAN, regardless of CRAN check status, as long as the CRAN package exists in the Posit Public Package manager snapshot used in <a href="#staging">Staging</a>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>An R-multiverse package can strongly depend on a package from CRAN, regardless of CRAN check status, as long as the CRAN package exists in the Posit Public Package manager snapshot used in <a href="#staging">Staging</a>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>The dependency must pass at least once during the current <a href="#candidate-freeze">candidate freeze</a>, but not necessarily at the same time as the downstream packages that depend on it.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
