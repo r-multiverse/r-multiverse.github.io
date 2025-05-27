@@ -151,7 +151,7 @@
     "href": "policies.html",
     "title": "Policies",
     "section": "",
-    "text": "The following policies govern all aspects of R-multiverse, including but not limited to administration, acceptable use, and security.\n\nGovernance\nSecurity\nAcceptable Use\nTerms of Use\nCode of Conduct\nReview"
+    "text": "The following policies govern all aspects of R-multiverse.\n\nGovernance\nSecurity\nAcceptable Use\nTerms of Use\nCode of Conduct\nReview"
   },
   {
     "objectID": "logo/LICENSE.html",
@@ -459,7 +459,7 @@
     "href": "index.html",
     "title": "R-multiverse",
     "section": "",
-    "text": "R-multiverse is a new initiative to establish a trustworthy community-curated dual repository for R packages, powered by open-source R-universe infrastructure. We strive for transparent governance, high automation, and quarterly production releases. Visit the overview page to learn more."
+    "text": "R-multiverse is a new community-curated dual repository for R packages, powered by open-source R-universe infrastructure. We strive for transparent governance, high automation, and quarterly production releases. Visit the overview page to learn more."
   },
   {
     "objectID": "moderators.html",
