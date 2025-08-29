@@ -11,7 +11,7 @@
     "href": "production.html#users",
     "title": "Production repository",
     "section": "Users",
-    "text": "Users\nThe current Production snapshot was deployed on 2025-06-15. It includes package sources, Mac OS binaries, and Windows binaries.1 The snapshot was tested with the base R 4.5 and CRAN packages from the dependency freeze on 2025-04-15. Please use the 2025-04-15 version of CRAN from Posit Public Package Manager (p3m) to install dependencies:2\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org/2025-06-15\",\n    \"https://packagemanager.posit.co/cran/2025-04-15\"\n  )\n)"
+    "text": "Users\nThe current Production snapshot was deployed on 2025-06-15, and it has 35 packages. The snapshot includes sources, Mac OS binaries, and Windows binaries.1 The snapshot was tested with the base R 4.5 and CRAN packages from the dependency freeze on 2025-04-15. Please use the 2025-04-15 version of CRAN from Posit Public Package Manager (p3m) to install dependencies:2\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org/2025-06-15\",\n    \"https://packagemanager.posit.co/cran/2025-04-15\"\n  )\n)"
   },
   {
     "objectID": "production.html#staging",
@@ -655,7 +655,7 @@
     "href": "overview.html#installing-packages",
     "title": "Overview",
     "section": "Installing packages",
-    "text": "Installing packages\nEach R-multiverse repository has a URL for the repos argument of install.packages(). For example, to install polars from Community: 1\ninstall.packages(\n  \"polars\",\n  repos = c(\"https://community.r-multiverse.org\", getOption(\"repos\"))\n)\nProduction is deployed in periodic snapshots throughout the year. The current Production snapshot was deployed on 2025-06-15. It was tested with the base R 4.5 and CRAN packages from the dependency freeze on 2025-04-15. Please use the 2025-04-15 version of CRAN from Posit Public Package Manager (p3m) to install dependencies:2\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org/2025-06-15\",\n    \"https://packagemanager.posit.co/cran/2025-04-15\"\n  )\n)"
+    "text": "Installing packages\nEach R-multiverse repository has a URL for the repos argument of install.packages(). For example, to install polars from Community: 1\ninstall.packages(\n  \"polars\",\n  repos = c(\"https://community.r-multiverse.org\", getOption(\"repos\"))\n)\nProduction is deployed in periodic snapshots throughout the year. The current Production snapshot was deployed on 2025-06-15, and it has 35 packages. The snapshot was tested with the base R 4.5 and CRAN packages from the dependency freeze on 2025-04-15. Please use the 2025-04-15 version of CRAN from Posit Public Package Manager (p3m) to install dependencies:2\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org/2025-06-15\",\n    \"https://packagemanager.posit.co/cran/2025-04-15\"\n  )\n)"
   },
   {
     "objectID": "overview.html#other-repositories",

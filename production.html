@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.7.34">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -72,7 +72,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-d68be38d83eca2bb035acf846ffba811.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -268,7 +268,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The Production repository comprises a subset of <a href="./community.html">Community</a> package releases which are mutually compatible and meet a high standard of quality. R-multiverse deploys Production in <a href="#schedule">periodic snapshots throughout the year</a>. Prior to each snapshot, packages undergo a <a href="#staging">Staging</a> process that gradually freezes release candidates and their dependencies.</p>
 <section id="users" class="level2">
 <h2 class="anchored" data-anchor-id="users">Users</h2>
-<p>The current Production snapshot was deployed on 2025-06-15. It includes package sources, Mac OS binaries, and Windows binaries.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The snapshot was tested with the base R 4.5 and <a href="https://cran.r-project.org/">CRAN</a> packages from the <a href="#staging">dependency freeze</a> on 2025-04-15. Please use the 2025-04-15 version of CRAN from <a href="https://packagemanager.posit.co">Posit Public Package Manager (p3m)</a> to install dependencies:<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>The current Production snapshot was deployed on 2025-06-15, and it has 35 packages. The snapshot includes sources, Mac OS binaries, and Windows binaries.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The snapshot was tested with the base R 4.5 and <a href="https://cran.r-project.org/">CRAN</a> packages from the <a href="#staging">dependency freeze</a> on 2025-04-15. Please use the 2025-04-15 version of CRAN from <a href="https://packagemanager.posit.co">Posit Public Package Manager (p3m)</a> to install dependencies:<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"polars"</span>,</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
@@ -391,23 +391,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The following table lists all past and present Production snapshots, with more recent snapshots listed higher. Snapshots over a year old do not have binaries. The table includes the start date of each phase of <a href="#staging">Staging</a> and the compatible version of base R. The URLs for the <code>repos</code> argument of <code>install.packages()</code> can be inferred from the dates below.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="poapaqsvkc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#poapaqsvkc table {
+<div id="flfkoqntmp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#flfkoqntmp table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#poapaqsvkc thead, #poapaqsvkc tbody, #poapaqsvkc tfoot, #poapaqsvkc tr, #poapaqsvkc td, #poapaqsvkc th {
+#flfkoqntmp thead, #flfkoqntmp tbody, #flfkoqntmp tfoot, #flfkoqntmp tr, #flfkoqntmp td, #flfkoqntmp th {
   border-style: none;
 }
 
-#poapaqsvkc p {
+#flfkoqntmp p {
   margin: 0;
   padding: 0;
 }
 
-#poapaqsvkc .gt_table {
+#flfkoqntmp .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -433,12 +433,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#poapaqsvkc .gt_caption {
+#flfkoqntmp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#poapaqsvkc .gt_title {
+#flfkoqntmp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -450,7 +450,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#poapaqsvkc .gt_subtitle {
+#flfkoqntmp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -462,7 +462,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#poapaqsvkc .gt_heading {
+#flfkoqntmp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -474,13 +474,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#poapaqsvkc .gt_bottom_border {
+#flfkoqntmp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#poapaqsvkc .gt_col_headings {
+#flfkoqntmp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -495,7 +495,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#poapaqsvkc .gt_col_heading {
+#flfkoqntmp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -515,7 +515,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#poapaqsvkc .gt_column_spanner_outer {
+#flfkoqntmp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -527,15 +527,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#poapaqsvkc .gt_column_spanner_outer:first-child {
+#flfkoqntmp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#poapaqsvkc .gt_column_spanner_outer:last-child {
+#flfkoqntmp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#poapaqsvkc .gt_column_spanner {
+#flfkoqntmp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -547,11 +547,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#poapaqsvkc .gt_spanner_row {
+#flfkoqntmp .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#poapaqsvkc .gt_group_heading {
+#flfkoqntmp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -577,7 +577,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#poapaqsvkc .gt_empty_group_heading {
+#flfkoqntmp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -592,15 +592,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#poapaqsvkc .gt_from_md > :first-child {
+#flfkoqntmp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#poapaqsvkc .gt_from_md > :last-child {
+#flfkoqntmp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#poapaqsvkc .gt_row {
+#flfkoqntmp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -619,7 +619,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#poapaqsvkc .gt_stub {
+#flfkoqntmp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -632,7 +632,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#poapaqsvkc .gt_stub_row_group {
+#flfkoqntmp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -646,15 +646,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#poapaqsvkc .gt_row_group_first td {
+#flfkoqntmp .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#poapaqsvkc .gt_row_group_first th {
+#flfkoqntmp .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#poapaqsvkc .gt_summary_row {
+#flfkoqntmp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -664,16 +664,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#poapaqsvkc .gt_first_summary_row {
+#flfkoqntmp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#poapaqsvkc .gt_first_summary_row.thick {
+#flfkoqntmp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#poapaqsvkc .gt_last_summary_row {
+#flfkoqntmp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -683,7 +683,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#poapaqsvkc .gt_grand_summary_row {
+#flfkoqntmp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -693,7 +693,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#poapaqsvkc .gt_first_grand_summary_row {
+#flfkoqntmp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -703,7 +703,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#poapaqsvkc .gt_last_grand_summary_row_top {
+#flfkoqntmp .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -713,11 +713,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#poapaqsvkc .gt_striped {
+#flfkoqntmp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#poapaqsvkc .gt_table_body {
+#flfkoqntmp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -726,7 +726,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#poapaqsvkc .gt_footnotes {
+#flfkoqntmp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -740,7 +740,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#poapaqsvkc .gt_footnote {
+#flfkoqntmp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -749,7 +749,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#poapaqsvkc .gt_sourcenotes {
+#flfkoqntmp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -763,7 +763,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#poapaqsvkc .gt_sourcenote {
+#flfkoqntmp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -771,72 +771,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#poapaqsvkc .gt_left {
+#flfkoqntmp .gt_left {
   text-align: left;
 }
 
-#poapaqsvkc .gt_center {
+#flfkoqntmp .gt_center {
   text-align: center;
 }
 
-#poapaqsvkc .gt_right {
+#flfkoqntmp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#poapaqsvkc .gt_font_normal {
+#flfkoqntmp .gt_font_normal {
   font-weight: normal;
 }
 
-#poapaqsvkc .gt_font_bold {
+#flfkoqntmp .gt_font_bold {
   font-weight: bold;
 }
 
-#poapaqsvkc .gt_font_italic {
+#flfkoqntmp .gt_font_italic {
   font-style: italic;
 }
 
-#poapaqsvkc .gt_super {
+#flfkoqntmp .gt_super {
   font-size: 65%;
 }
 
-#poapaqsvkc .gt_footnote_marks {
+#flfkoqntmp .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#poapaqsvkc .gt_asterisk {
+#flfkoqntmp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#poapaqsvkc .gt_indent_1 {
+#flfkoqntmp .gt_indent_1 {
   text-indent: 5px;
 }
 
-#poapaqsvkc .gt_indent_2 {
+#flfkoqntmp .gt_indent_2 {
   text-indent: 10px;
 }
 
-#poapaqsvkc .gt_indent_3 {
+#flfkoqntmp .gt_indent_3 {
   text-indent: 15px;
 }
 
-#poapaqsvkc .gt_indent_4 {
+#flfkoqntmp .gt_indent_4 {
   text-indent: 20px;
 }
 
-#poapaqsvkc .gt_indent_5 {
+#flfkoqntmp .gt_indent_5 {
   text-indent: 25px;
 }
 
-#poapaqsvkc .katex-display {
+#flfkoqntmp .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#poapaqsvkc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#flfkoqntmp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
