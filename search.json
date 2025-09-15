@@ -417,7 +417,7 @@
     "href": "contributors.html#updating-your-package",
     "title": "Contributors",
     "section": "Updating your package",
-    "text": "Updating your package\nTo update your package to a new version on R-multiverse, simply create a new release on GitHub or GitLab. Please be sure to set the new release as the latest release. Sometimes this does not happen automatically. On GitHub, there is an important check box near the bottom of the web form:\n\nAfter you create the release, you should see a “Latest” label on the right-hand side of the title.\n\nIf successful, the new version of your package should appear at https://community.r-multiverse.org after the Community universe automatically refreshes."
+    "text": "Updating your package\nTo update your package to a new version on R-multiverse, simply create a new release on GitHub or GitLab. usethis::use_github_release() makes this process easy for packages hosted on GitHub.2 If you instead create the release manually in the GitHub.com web interface, please be sure to set the new release as the latest release. Sometimes the newest release does not automatically become “latest”. On GitHub, there is an important check box near the bottom of the web form:\n\nAfter you create the release, you should see a “Latest” label on the right-hand side of the title.\n\nIf successful, the new version of your package should appear at https://community.r-multiverse.org after the Community universe automatically refreshes."
   },
   {
     "objectID": "contributors.html#production",
@@ -466,7 +466,7 @@
     "href": "contributors.html#footnotes",
     "title": "Contributors",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nPublishing a registered package requires 3 workflows in sequence: https://github.com/r-multiverse/community/actions/workflows/review.yaml, https://github.com/r-multiverse/community/actions/workflows/packages.yaml, and https://github.com/r-universe/r-multiverse/actions/workflows/sync.yml.↩︎"
+    "text": "Footnotes\n\n\nPublishing a registered package requires 3 workflows in sequence: https://github.com/r-multiverse/community/actions/workflows/review.yaml, https://github.com/r-multiverse/community/actions/workflows/packages.yaml, and https://github.com/r-universe/r-multiverse/actions/workflows/sync.yml.↩︎\nSee https://juliasilge.com/blog/r-pkg-release/ for an example of a comprehensive package release workflow.↩︎"
   },
   {
     "objectID": "index.html",

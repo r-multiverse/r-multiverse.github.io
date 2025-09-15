@@ -301,7 +301,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="updating-your-package" class="level2">
 <h2 class="anchored" data-anchor-id="updating-your-package">Updating your package</h2>
-<p>To update your package to a new version on R-multiverse, simply create a new release on <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">GitHub</a> or <a href="https://docs.gitlab.com/user/project/releases/">GitLab</a>. Please be sure to set the new release as the latest release. Sometimes this does not happen automatically. On GitHub, there is an important check box near the bottom of the web form:</p>
+<p>To update your package to a new version on R-multiverse, simply create a new release on <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">GitHub</a> or <a href="https://docs.gitlab.com/user/project/releases/">GitLab</a>. <a href="https://usethis.r-lib.org/reference/use_github_release.html"><code>usethis::use_github_release()</code></a> makes this process easy for packages hosted on GitHub.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> If you instead create the release manually in the GitHub.com web interface, please be sure to set the new release as the latest release. Sometimes the newest release does not automatically become “latest”. On GitHub, there is an important check box near the bottom of the web form:</p>
 <p><img src="./images/latest-release-checkbox.png" class="img-fluid"></p>
 <p>After you create the release, you should see a “Latest” label on the right-hand side of the title.</p>
 <p><img src="./images/latest-release-label.png" class="img-fluid"></p>
@@ -341,6 +341,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <ol>
 <li id="fn1"><p>Publishing a registered package requires 3 workflows in sequence: <a href="https://github.com/r-multiverse/community/actions/workflows/review.yaml" class="uri">https://github.com/r-multiverse/community/actions/workflows/review.yaml</a>, <a href="https://github.com/r-multiverse/community/actions/workflows/packages.yaml" class="uri">https://github.com/r-multiverse/community/actions/workflows/packages.yaml</a>, and <a href="https://github.com/r-universe/r-multiverse/actions/workflows/sync.yml" class="uri">https://github.com/r-universe/r-multiverse/actions/workflows/sync.yml</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>See <a href="https://juliasilge.com/blog/r-pkg-release/" class="uri">https://juliasilge.com/blog/r-pkg-release/</a> for an example of a comprehensive package release workflow.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
