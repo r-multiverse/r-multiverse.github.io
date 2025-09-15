@@ -410,7 +410,14 @@
     "href": "contributors.html#community",
     "title": "Contributors",
     "section": "Community",
-    "text": "Community\nAfter registration, the latest release of the package will automatically appear in the Community repository. GitHub Actions workflows periodically read all the package listings, generate an R-universe packages.json file, and host the Community repository as a universe. The Community repository automatically distributes new releases that the package maintainer creates on GitHub/GitLab."
+    "text": "Community\nAfter registration, the latest GitHub/GitLab release of the package will automatically appear in the Community repository, and you will see it in the dashboard at https://community.r-multiverse.org. This process is facilitated by public GitHub Actions workflows on both R-multiverse and R-universe1, and it may take a few hours."
+  },
+  {
+    "objectID": "contributors.html#updating-your-package",
+    "href": "contributors.html#updating-your-package",
+    "title": "Contributors",
+    "section": "Updating your package",
+    "text": "Updating your package\nTo update your package to a new version on R-multiverse, simply create a new release on GitHub or GitLab. Please be sure to set the new release as the latest release. Sometimes this does not happen automatically. On GitHub, there is an important check box near the bottom of the web form:\n\nAfter you create the release, you should see a “Latest” label on the right-hand side of the title.\n\nIf successful, the new version of your package should appear at https://community.r-multiverse.org after the Community universe automatically refreshes."
   },
   {
     "objectID": "contributors.html#production",
@@ -453,6 +460,13 @@
     "title": "Contributors",
     "section": "Help",
     "text": "Help\nPlease report bugs to https://github.com/r-multiverse/help/issues and send other feedback and questions to https://github.com/r-multiverse/help/discussions. Please note that https://github.com/r-multiverse/contributions can only accept pull requests to add or modify package entries."
+  },
+  {
+    "objectID": "contributors.html#footnotes",
+    "href": "contributors.html#footnotes",
+    "title": "Contributors",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nPublishing a registered package requires 3 workflows in sequence: https://github.com/r-multiverse/community/actions/workflows/review.yaml, https://github.com/r-multiverse/community/actions/workflows/packages.yaml, and https://github.com/r-universe/r-multiverse/actions/workflows/sync.yml.↩︎"
   },
   {
     "objectID": "index.html",
