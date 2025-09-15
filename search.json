@@ -11,7 +11,7 @@
     "href": "production.html#users",
     "title": "Production repository",
     "section": "Users",
-    "text": "Users\nThe current Production snapshot was deployed on 2025-06-15, and it has 35 packages. The snapshot includes sources, Mac OS binaries, and Windows binaries.1 The snapshot was tested with the base R 4.5 and CRAN packages from the dependency freeze on 2025-04-15. Please use the 2025-04-15 version of CRAN from Posit Public Package Manager (p3m) to install dependencies:2\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org/2025-06-15\",\n    \"https://packagemanager.posit.co/cran/2025-04-15\"\n  )\n)"
+    "text": "Users\nThe current Production snapshot was deployed on 2025-09-15, and it has 39 packages. The snapshot includes sources, Mac OS binaries, and Windows binaries.1 The snapshot was tested with the base R 4.5 and CRAN packages from the dependency freeze on 2025-07-15. Please use the 2025-07-15 version of CRAN from Posit Public Package Manager (p3m) to install dependencies:2\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org/2025-09-15\",\n    \"https://packagemanager.posit.co/cran/2025-07-15\"\n  )\n)"
   },
   {
     "objectID": "production.html#staging",
@@ -46,7 +46,7 @@
     "href": "production.html#archive",
     "title": "Production repository",
     "section": "Archive",
-    "text": "Archive\nThe following table lists all past and present Production snapshots, with more recent snapshots listed higher. Snapshots over a year old do not have binaries. The table includes the start date of each phase of Staging and the compatible version of base R. The URLs for the repos argument of install.packages() can be inferred from the dates below.\n\n\n\n\n\n\n\n\nr\ndependency_freeze\ncandidate_freeze\nsnapshot\n\n\n\n\n4.5\n2025-04-15\n2025-05-15\n2025-06-15\n\n\n4.4\n2025-01-15\n2025-02-15\n2025-03-15\n\n\n4.4\n2025-01-15\n2025-01-15\n2025-02-15"
+    "text": "Archive\nThe following table lists all past and present Production snapshots, with more recent snapshots listed higher. Snapshots over a year old do not have binaries. The table includes the start date of each phase of Staging and the compatible version of base R. The URLs for the repos argument of install.packages() can be inferred from the dates below.\n\n\n\n\n\n\n\n\nr\ndependency_freeze\ncandidate_freeze\nsnapshot\n\n\n\n\n4.5\n2025-07-15\n2025-08-15\n2025-09-15\n\n\n4.5\n2025-04-15\n2025-05-15\n2025-06-15\n\n\n4.4\n2025-01-15\n2025-02-15\n2025-03-15\n\n\n4.4\n2025-01-15\n2025-01-15\n2025-02-15"
   },
   {
     "objectID": "production.html#footnotes",
@@ -655,7 +655,7 @@
     "href": "overview.html#installing-packages",
     "title": "Overview",
     "section": "Installing packages",
-    "text": "Installing packages\nEach R-multiverse repository has a URL for the repos argument of install.packages(). For example, to install polars from Community: 1\ninstall.packages(\n  \"polars\",\n  repos = c(\"https://community.r-multiverse.org\", getOption(\"repos\"))\n)\nProduction is deployed in periodic snapshots throughout the year. The current Production snapshot was deployed on 2025-06-15, and it has 35 packages. The snapshot was tested with the base R 4.5 and CRAN packages from the dependency freeze on 2025-04-15. Please use the 2025-04-15 version of CRAN from Posit Public Package Manager (p3m) to install dependencies:2\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org/2025-06-15\",\n    \"https://packagemanager.posit.co/cran/2025-04-15\"\n  )\n)"
+    "text": "Installing packages\nEach R-multiverse repository has a URL for the repos argument of install.packages(). For example, to install polars from Community: 1\ninstall.packages(\n  \"polars\",\n  repos = c(\"https://community.r-multiverse.org\", getOption(\"repos\"))\n)\nProduction is deployed in periodic snapshots throughout the year. The current Production snapshot was deployed on 2025-09-15, and it has 39 packages. The snapshot was tested with the base R 4.5 and CRAN packages from the dependency freeze on 2025-07-15. Please use the 2025-07-15 version of CRAN from Posit Public Package Manager (p3m) to install dependencies:2\ninstall.packages(\n  \"polars\",\n  repos = c(\n    \"https://production.r-multiverse.org/2025-09-15\",\n    \"https://packagemanager.posit.co/cran/2025-07-15\"\n  )\n)"
   },
   {
     "objectID": "overview.html#other-repositories",
