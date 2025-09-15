@@ -100,6 +100,15 @@ He is one of the maintainers for the [Rocker](https://rocker-project.org/) proje
 
 :::
 
+## Code of Conduct Committee
+
+The Code of Conduct Committee includes the following administrators:
+
+* [Will Landau](https://github.com/wlandau)
+* [Charlie Gao](https://github.com/shikokuchuo)
+* [Jeroen Ooms](https://github.com/jeroen)
+* [Maëlle Salmon](https://github.com/maelle)
+
 ## Alumni
 
 
