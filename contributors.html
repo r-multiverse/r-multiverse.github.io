@@ -273,8 +273,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This page explains how to contribute packages to R-multiverse.</p>
 <section id="preparation" class="level2">
 <h2 class="anchored" data-anchor-id="preparation">Preparation</h2>
-<p><a href="./policies.html">R-multiverse policies</a> govern all forms of participation in R-multiverse, including package contributions. Administrators, moderators, and contributors are all subject to the terms therein. The <a href="./review.html">review policy</a> specifically governs package contribution and review.</p>
-<p>In addition, R-multiverse pulls R packages directly from <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">releases</a> on GitHub and GitLab. Before contributing a package to R-multiverse, please ensure it is available in a public GitHub/GitLab source code repository with at least one <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">release</a> (<a href="https://github.com/pola-rs/r-polars/releases/tag/v0.21.0">example</a>).</p>
+<p><a href="./policies.html">R-multiverse policies</a> govern all forms of participation in R-multiverse, including package contributions. Administrators, moderators, and contributors are all subject to the terms therein. The <a href="./review.html">review policy</a> specifically governs package contribution and review. In particular, please ensure your package has a valid free open-source (FOSS) license and a formal <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">release</a>.</p>
+<p>You can run <a href="https://r-multiverse.org/multiverse.internals/reference/review_package.html"><code>multiverse.internals::review_package()</code></a> to check if your package is compliant. For example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"multiverse.internals"</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(<span class="st">"https://community.r-multiverse.org"</span>, <span class="fu">getOption</span>(<span class="st">"repos"</span>))</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>multiverse.internals<span class="sc">::</span><span class="fu">review_package</span>(</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">"polars"</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">url =</span> <span class="st">"https://github.com/pola-rs/r-polars"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Not all findings are problems, but some may delay the acceptance of your package.</p>
 </section>
 <section id="registration" class="level2">
 <h2 class="anchored" data-anchor-id="registration">Registration</h2>
@@ -323,7 +332,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="badges">Badges</h2>
 <p><a href="https://community.r-multiverse.org/mirai"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2Fmirai&amp;query=%24.Version&amp;label=r-multiverse" alt="R-multiverse status"></a></p>
 <p>To add a dynamic ‘R-multiverse’ badge for package readme files, like the one above, copy the following markdown snippet, replacing ‘pkgNAME’ with the actual package name in both places it appears:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2FpkgNAME&amp;query=%24.Version&amp;label=r-multiverse)</span><span class="co">](https://community.r-multiverse.org/pkgNAME)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2FpkgNAME&amp;query=%24.Version&amp;label=r-multiverse)</span><span class="co">](https://community.r-multiverse.org/pkgNAME)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="deregistration" class="level2">
 <h2 class="anchored" data-anchor-id="deregistration">Deregistration</h2>

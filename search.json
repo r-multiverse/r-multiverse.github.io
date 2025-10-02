@@ -396,7 +396,7 @@
     "href": "contributors.html#preparation",
     "title": "Contributors",
     "section": "Preparation",
-    "text": "Preparation\nR-multiverse policies govern all forms of participation in R-multiverse, including package contributions. Administrators, moderators, and contributors are all subject to the terms therein. The review policy specifically governs package contribution and review.\nIn addition, R-multiverse pulls R packages directly from releases on GitHub and GitLab. Before contributing a package to R-multiverse, please ensure it is available in a public GitHub/GitLab source code repository with at least one release (example)."
+    "text": "Preparation\nR-multiverse policies govern all forms of participation in R-multiverse, including package contributions. Administrators, moderators, and contributors are all subject to the terms therein. The review policy specifically governs package contribution and review. In particular, please ensure your package has a valid free open-source (FOSS) license and a formal release.\nYou can run multiverse.internals::review_package() to check if your package is compliant. For example:\ninstall.packages(\n  \"multiverse.internals\",\n  repos = c(\"https://community.r-multiverse.org\", getOption(\"repos\"))\n)\nmultiverse.internals::review_package(\n  name = \"polars\",\n  url = \"https://github.com/pola-rs/r-polars\"\n)\nNot all findings are problems, but some may delay the acceptance of your package."
   },
   {
     "objectID": "contributors.html#registration",
@@ -522,7 +522,7 @@
     "href": "moderators.html#reviewing-contributions",
     "title": "Moderators",
     "section": "Reviewing Contributions",
-    "text": "Reviewing Contributions\nModerators review R package contributions to R-multiverse. The contribution process is described on the website and is governed by the official R-multiverse review policy.\nThe role of a moderator is to read contributions at https://github.com/r-multiverse/contributions/pulls, merge the pull requests that comply with R-multiverse official policies, and either close the pull request (without merging) or ask for changes in non-compliant cases.\nAs a moderator, you may optionally restrict your review to packages in your area of expertise. Simply search contributions for relevant keywords, including R-multiverse topics."
+    "text": "Reviewing Contributions\nModerators review R package contributions to R-multiverse. The contribution process is described on the website and is governed by the official R-multiverse review policy.\nThe role of a moderator is to read contributions at https://github.com/r-multiverse/contributions/pulls, merge the pull requests that comply with R-multiverse official policies, and either close the pull request (without merging) or ask for changes in non-compliant cases.\nWhen the bot triggers manual review, please run multiverse.internals::review_package() on each of the submitted packages. This function runs the list of automated pre-registration checks.\nAs a moderator, you may optionally restrict your review to packages in your area of expertise. Simply search contributions for relevant keywords, including R-multiverse topics."
   },
   {
     "objectID": "moderators.html#maintaining-contributions",
