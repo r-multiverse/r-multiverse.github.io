@@ -448,6 +448,13 @@
     "text": "Badges\n\nTo add a dynamic ‘R-multiverse’ badge for package readme files, like the one above, copy the following markdown snippet, replacing ‘pkgNAME’ with the actual package name in both places it appears:\n[![R-multiverse status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcommunity.r-multiverse.org%2Fapi%2Fpackages%2FpkgNAME&query=%24.Version&label=r-multiverse)](https://community.r-multiverse.org/pkgNAME)"
   },
   {
+    "objectID": "contributors.html#installation-instructions",
+    "href": "contributors.html#installation-instructions",
+    "title": "Contributors",
+    "section": "Installation instructions",
+    "text": "Installation instructions\nIn the README of your package, it is good practice to include installation instructions (example). Please see the overview page for general instructions on installing packages from R-multiverse. Feel free to adapt these instructions for your own package."
+  },
+  {
     "objectID": "contributors.html#deregistration",
     "href": "contributors.html#deregistration",
     "title": "Contributors",
