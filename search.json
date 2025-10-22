@@ -427,6 +427,13 @@
     "text": "Production\nR-multiverse updates the Production repository in quarterly snapshots. The Production status page list the packages successfully staged for the next Production snapshot. Visit the Production documentation to learn how the process works."
   },
   {
+    "objectID": "contributors.html#checks",
+    "href": "contributors.html#checks",
+    "title": "Contributors",
+    "section": "Checks",
+    "text": "Checks\nTo help get your package into Production, you can check each development commit against same versions of R and packages as in the Staging universe. That way, when you create a new release of your package, you can be more confident that your package will pass checks.\nIf you host your source code on GitHub, simply add a small workflow file to your package:\nusethis::use_github_action(url = \"https://github.com/r-multiverse/workflows/blob/main/examples/r-multiverse-staging.yaml\")\nThen commit that file to GitHub. From that point on, every commit will trigger a GitHub Actions workflow that runs R CMD check in an environment that approximates Staging."
+  },
+  {
     "objectID": "contributors.html#status",
     "href": "contributors.html#status",
     "title": "Contributors",
