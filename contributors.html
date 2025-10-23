@@ -324,10 +324,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="checks" class="level2">
 <h2 class="anchored" data-anchor-id="checks">Checks</h2>
-<p>To help get your package into <a href="./production.html">Production</a>, you can check each development commit against same versions of R and packages as in the <a href="./production.html">Staging universe</a>. That way, when you create a new release of your package, you can be more confident that your package will pass <a href="./production.html#checks">checks</a>.</p>
+<p>Before you release a new version of your package, you can check the development version in an environment that approximates <a href="./production.html">Staging</a>. This will help you pass <a href="./production.html#checks">checks</a> and get into <a href="./production.html">Production</a>.</p>
 <p>If you host your source code on GitHub, simply add a small workflow file to your package:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_github_action</span>(<span class="at">url =</span> <span class="st">"https://github.com/r-multiverse/workflows/blob/main/examples/r-multiverse-staging.yaml"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Then commit that file to GitHub. From that point on, every commit will trigger a <a href="https://github.com/features/actions">GitHub Actions</a> workflow that runs <code>R CMD check</code> in an environment that approximates <a href="./production.html">Staging</a>.</p>
+<p>Then commit that file to GitHub, navigate to the “Actions” section of your repository, and run the <code>r-multiverse-staging</code> workflow:</p>
+<p><img src="./images/r-multiverse-staging.png" class="img-fluid"></p>
+<p><code>R CMD check</code> will run on Mac, Linux, and Windows. The workflow uses the same versions of base R and R packages that R-multiverse enforces in <a href="./production.html">Staging</a>.</p>
 </section>
 <section id="status" class="level2">
 <h2 class="anchored" data-anchor-id="status">Status</h2>
