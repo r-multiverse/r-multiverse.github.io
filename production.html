@@ -270,12 +270,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The Production repository comprises a subset of <a href="./community.html">Community</a> package releases which are mutually compatible and meet a high standard of quality. R-multiverse deploys Production in <a href="#schedule">periodic snapshots throughout the year</a>. Prior to each snapshot, packages undergo a <a href="#staging">Staging</a> process that gradually freezes release candidates and their dependencies.</p>
 <section id="users" class="level2">
 <h2 class="anchored" data-anchor-id="users">Users</h2>
-<p>The current Production snapshot was deployed on 2025-09-15, and it has 39 packages. The snapshot includes sources, Mac OS binaries, and Windows binaries.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The snapshot was tested with the base R 4.5 and <a href="https://cran.r-project.org/">CRAN</a> packages from the <a href="#staging">dependency freeze</a> on 2025-07-15. Please use the 2025-07-15 version of CRAN from <a href="https://packagemanager.posit.co">Posit Public Package Manager (p3m)</a> to install dependencies:<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>The current Production snapshot was deployed on 2025-12-15, and it has 59 packages. The snapshot includes sources, Mac OS binaries, and Windows binaries.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> The snapshot was tested with the base R 4.5 and <a href="https://cran.r-project.org/">CRAN</a> packages from the <a href="#staging">dependency freeze</a> on 2025-10-15. Please use the 2025-10-15 version of CRAN from <a href="https://packagemanager.posit.co">Posit Public Package Manager (p3m)</a> to install dependencies:<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"polars"</span>,</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">repos =</span> <span class="fu">c</span>(</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://production.r-multiverse.org/2025-09-15"</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://packagemanager.posit.co/cran/2025-07-15"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://production.r-multiverse.org/2025-12-15"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"https://packagemanager.posit.co/cran/2025-10-15"</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
@@ -393,23 +393,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The following table lists all past and present Production snapshots, with more recent snapshots listed higher. Snapshots over a year old do not have binaries. The table includes the start date of each phase of <a href="#staging">Staging</a> and the compatible version of base R. The URLs for the <code>repos</code> argument of <code>install.packages()</code> can be inferred from the dates below.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="qwtfdnpuqy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#qwtfdnpuqy table {
+<div id="vikwwrpxgf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vikwwrpxgf table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#qwtfdnpuqy thead, #qwtfdnpuqy tbody, #qwtfdnpuqy tfoot, #qwtfdnpuqy tr, #qwtfdnpuqy td, #qwtfdnpuqy th {
+#vikwwrpxgf thead, #vikwwrpxgf tbody, #vikwwrpxgf tfoot, #vikwwrpxgf tr, #vikwwrpxgf td, #vikwwrpxgf th {
   border-style: none;
 }
 
-#qwtfdnpuqy p {
+#vikwwrpxgf p {
   margin: 0;
   padding: 0;
 }
 
-#qwtfdnpuqy .gt_table {
+#vikwwrpxgf .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -435,12 +435,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#qwtfdnpuqy .gt_caption {
+#vikwwrpxgf .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#qwtfdnpuqy .gt_title {
+#vikwwrpxgf .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -452,7 +452,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#qwtfdnpuqy .gt_subtitle {
+#vikwwrpxgf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -464,7 +464,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#qwtfdnpuqy .gt_heading {
+#vikwwrpxgf .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -476,13 +476,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#qwtfdnpuqy .gt_bottom_border {
+#vikwwrpxgf .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qwtfdnpuqy .gt_col_headings {
+#vikwwrpxgf .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -497,7 +497,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#qwtfdnpuqy .gt_col_heading {
+#vikwwrpxgf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -517,7 +517,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#qwtfdnpuqy .gt_column_spanner_outer {
+#vikwwrpxgf .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -529,15 +529,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#qwtfdnpuqy .gt_column_spanner_outer:first-child {
+#vikwwrpxgf .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qwtfdnpuqy .gt_column_spanner_outer:last-child {
+#vikwwrpxgf .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qwtfdnpuqy .gt_column_spanner {
+#vikwwrpxgf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -549,11 +549,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#qwtfdnpuqy .gt_spanner_row {
+#vikwwrpxgf .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#qwtfdnpuqy .gt_group_heading {
+#vikwwrpxgf .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -579,7 +579,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#qwtfdnpuqy .gt_empty_group_heading {
+#vikwwrpxgf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -594,15 +594,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#qwtfdnpuqy .gt_from_md > :first-child {
+#vikwwrpxgf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qwtfdnpuqy .gt_from_md > :last-child {
+#vikwwrpxgf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qwtfdnpuqy .gt_row {
+#vikwwrpxgf .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -621,7 +621,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#qwtfdnpuqy .gt_stub {
+#vikwwrpxgf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -634,7 +634,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#qwtfdnpuqy .gt_stub_row_group {
+#vikwwrpxgf .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -648,15 +648,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#qwtfdnpuqy .gt_row_group_first td {
+#vikwwrpxgf .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qwtfdnpuqy .gt_row_group_first th {
+#vikwwrpxgf .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#qwtfdnpuqy .gt_summary_row {
+#vikwwrpxgf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -666,16 +666,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#qwtfdnpuqy .gt_first_summary_row {
+#vikwwrpxgf .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qwtfdnpuqy .gt_first_summary_row.thick {
+#vikwwrpxgf .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qwtfdnpuqy .gt_last_summary_row {
+#vikwwrpxgf .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -685,7 +685,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#qwtfdnpuqy .gt_grand_summary_row {
+#vikwwrpxgf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -695,7 +695,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#qwtfdnpuqy .gt_first_grand_summary_row {
+#vikwwrpxgf .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -705,7 +705,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#qwtfdnpuqy .gt_last_grand_summary_row_top {
+#vikwwrpxgf .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -715,11 +715,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#qwtfdnpuqy .gt_striped {
+#vikwwrpxgf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qwtfdnpuqy .gt_table_body {
+#vikwwrpxgf .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -728,7 +728,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#qwtfdnpuqy .gt_footnotes {
+#vikwwrpxgf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -742,7 +742,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#qwtfdnpuqy .gt_footnote {
+#vikwwrpxgf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -751,7 +751,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#qwtfdnpuqy .gt_sourcenotes {
+#vikwwrpxgf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -765,7 +765,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#qwtfdnpuqy .gt_sourcenote {
+#vikwwrpxgf .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -773,72 +773,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#qwtfdnpuqy .gt_left {
+#vikwwrpxgf .gt_left {
   text-align: left;
 }
 
-#qwtfdnpuqy .gt_center {
+#vikwwrpxgf .gt_center {
   text-align: center;
 }
 
-#qwtfdnpuqy .gt_right {
+#vikwwrpxgf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qwtfdnpuqy .gt_font_normal {
+#vikwwrpxgf .gt_font_normal {
   font-weight: normal;
 }
 
-#qwtfdnpuqy .gt_font_bold {
+#vikwwrpxgf .gt_font_bold {
   font-weight: bold;
 }
 
-#qwtfdnpuqy .gt_font_italic {
+#vikwwrpxgf .gt_font_italic {
   font-style: italic;
 }
 
-#qwtfdnpuqy .gt_super {
+#vikwwrpxgf .gt_super {
   font-size: 65%;
 }
 
-#qwtfdnpuqy .gt_footnote_marks {
+#vikwwrpxgf .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#qwtfdnpuqy .gt_asterisk {
+#vikwwrpxgf .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qwtfdnpuqy .gt_indent_1 {
+#vikwwrpxgf .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qwtfdnpuqy .gt_indent_2 {
+#vikwwrpxgf .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qwtfdnpuqy .gt_indent_3 {
+#vikwwrpxgf .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qwtfdnpuqy .gt_indent_4 {
+#vikwwrpxgf .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qwtfdnpuqy .gt_indent_5 {
+#vikwwrpxgf .gt_indent_5 {
   text-indent: 25px;
 }
 
-#qwtfdnpuqy .katex-display {
+#vikwwrpxgf .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#qwtfdnpuqy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vikwwrpxgf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -855,23 +855,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody class="gt_table_body">
 <tr class="odd">
 <td class="gt_row gt_right" headers="r">4.5</td>
+<td class="gt_row gt_right" headers="dependency_freeze">2025-10-15</td>
+<td class="gt_row gt_right" headers="candidate_freeze">2025-11-15</td>
+<td class="gt_row gt_right" headers="snapshot">2025-12-15</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="r">4.5</td>
 <td class="gt_row gt_right" headers="dependency_freeze">2025-07-15</td>
 <td class="gt_row gt_right" headers="candidate_freeze">2025-08-15</td>
 <td class="gt_row gt_right" headers="snapshot">2025-09-15</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_right" headers="r">4.5</td>
 <td class="gt_row gt_right" headers="dependency_freeze">2025-04-15</td>
 <td class="gt_row gt_right" headers="candidate_freeze">2025-05-15</td>
 <td class="gt_row gt_right" headers="snapshot">2025-06-15</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td class="gt_row gt_right" headers="r">4.4</td>
 <td class="gt_row gt_right" headers="dependency_freeze">2025-01-15</td>
 <td class="gt_row gt_right" headers="candidate_freeze">2025-02-15</td>
 <td class="gt_row gt_right" headers="snapshot">2025-03-15</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td class="gt_row gt_right" headers="r">4.4</td>
 <td class="gt_row gt_right" headers="dependency_freeze">2025-01-15</td>
 <td class="gt_row gt_right" headers="candidate_freeze">2025-01-15</td>
