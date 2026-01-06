@@ -329,7 +329,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_github_action</span>(<span class="at">url =</span> <span class="st">"https://github.com/r-multiverse/workflows/blob/main/examples/r-multiverse-staging.yaml"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Then commit that file to GitHub, navigate to the “Actions” section of your repository, and run the <code>r-multiverse-staging</code> workflow:</p>
 <p><img src="./images/r-multiverse-staging.png" class="img-fluid"></p>
-<p><code>R CMD check</code> will run on Mac, Linux, and Windows. The workflow uses the same versions of base R and R packages that R-multiverse enforces in <a href="./production.html">Staging</a>.</p>
+<p><code>R CMD check</code> will run in the <a href="production.md#staging">Staging</a> universe on multiple platforms and multiple versions of R. To enter <a href="production.md">Production</a>, your package must pass these <a href="production.md#staging">Staging</a> checks for R-release on Mac, Linux, and Windows. Other R versions and operating systems are not enforced.</p>
 </section>
 <section id="status" class="level2">
 <h2 class="anchored" data-anchor-id="status">Status</h2>

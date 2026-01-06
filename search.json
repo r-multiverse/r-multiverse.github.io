@@ -431,7 +431,7 @@
     "href": "contributors.html#checks",
     "title": "Contributors",
     "section": "Checks",
-    "text": "Checks\nBefore you release a new version of your package, you can check the development version in an environment that approximates Staging. This will help you pass checks and get into Production.\nIf you host your source code on GitHub, simply add a small workflow file to your package:\nusethis::use_github_action(url = \"https://github.com/r-multiverse/workflows/blob/main/examples/r-multiverse-staging.yaml\")\nThen commit that file to GitHub, navigate to the “Actions” section of your repository, and run the r-multiverse-staging workflow:\n\nR CMD check will run on Mac, Linux, and Windows. The workflow uses the same versions of base R and R packages that R-multiverse enforces in Staging."
+    "text": "Checks\nBefore you release a new version of your package, you can check the development version in an environment that approximates Staging. This will help you pass checks and get into Production.\nIf you host your source code on GitHub, simply add a small workflow file to your package:\nusethis::use_github_action(url = \"https://github.com/r-multiverse/workflows/blob/main/examples/r-multiverse-staging.yaml\")\nThen commit that file to GitHub, navigate to the “Actions” section of your repository, and run the r-multiverse-staging workflow:\n\nR CMD check will run in the Staging universe on multiple platforms and multiple versions of R. To enter Production, your package must pass these Staging checks for R-release on Mac, Linux, and Windows. Other R versions and operating systems are not enforced."
   },
   {
     "objectID": "contributors.html#status",
