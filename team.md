@@ -98,6 +98,22 @@ He is one of the maintainers for the [Rocker](https://rocker-project.org/) proje
 ::::
 :::
 
+::: {.row}
+### Visruth Srimath Kandali
+:::: {.columns}
+::: {.column width=20%}
+<a href="https://github.com/VisruthSK" target="_blank">
+  <img src="https://github.com/VisruthSK.png" class="img-fluid rounded-circle">
+</a>
+:::
+::: {.column width=10%}
+:::
+::: {.column width=70%}
+Visruth is a statistics student at Cal Poly San Luis Obispo and a member of the Stan development team. His interests are broadly Bayesian and skew toward computational methods and modeling. 
+:::
+::::
+:::
+
 :::
 
 ## Alumni
